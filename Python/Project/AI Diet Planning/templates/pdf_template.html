@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Workout Plan PDF</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='pdf_style.css') }}">
+</head>
+<body>
+    <div class="pdf-container">
+        <h1>AI Diet Planning - Workout Plan</h1>
+        <div class="plan-content">
+            {{ plan | safe }}
+        </div>
+    </div>
+</body>
+</html>

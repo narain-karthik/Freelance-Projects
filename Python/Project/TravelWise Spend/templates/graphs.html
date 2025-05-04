@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Expense Tracker - Graphs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+            min-height: 100vh;
+            padding: 40px;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px; /* Wider container for larger UI */
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(rgba(76, 175, 80, 0.9), rgba(76, 175, 80, 0.9)),
+                        url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+            padding: 5rem 3rem; /* Larger padding for a bigger header */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            width: 80px; /* Size to match screenshot */
+            height: auto;
+            margin-right: 1.5rem;
+        }
+        h1 {
+            font-size: 2.5rem; /* Larger font size */
+            font-weight: 600;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .menu-bar {
+            background: #fff;
+            padding: 1.5rem 3rem; /* More padding for larger UI */
+            border-bottom: 1px solid #eee;
+        }
+        .menu-bar a {
+            color: #666;
+            text-decoration: none;
+            padding: 0.9rem 1.8rem; /* Larger clickable area */
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+        .menu-bar a:hover {
+            background: #f0f0f0;
+            color: #4CAF50;
+        }
+        .menu-bar a.active {
+            background: #4CAF50;
+            color: white;
+        }
+        .content {
+            padding: 3rem; /* More padding for content */
+        }
+        h2 {
+            font-size: 2rem; /* Larger heading */
+            font-weight: 500;
+            color: #444;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .chart-container {
+            max-width: 800px; /* Wider chart for larger UI */
+            margin: 0 auto;
+            background: #fafafa;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+            .container {
+                max-width: 100%;
+                margin: 10px;
+            }
+            .header {
+                flex-direction: column;
+                text-align: center;
+                padding: 3rem 1.5rem;
+            }
+            .header-left {
+                flex-direction: column;
+                margin-bottom: 1.5rem;
+            }
+            .logo {
+                width: 60px;
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .menu-bar {
+                padding: 1rem;
+            }
+            .menu-bar a {
+                display: block;
+                margin: 0.5rem 0;
+                padding: 0.8rem 1rem;
+                font-size: 1rem;
+            }
+            .content {
+                padding: 1.5rem;
+            }
+            h2 {
+                font-size: 1.6rem;
+            }
+            .chart-container {
+                max-width: 100%;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-left">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="TravelWise Spend Logo" class="logo">
+                <h1>Budget Overview Graphs</h1>
+            </div>
+        </div>
+        <div class="menu-bar">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('create_budget') }}">Create Budget</a>
+            <a href="{{ url_for('reports') }}">Reports</a>
+            <a href="{{ url_for('graphs') }}" class="active">Graphs</a>
+            <a href="{{ url_for('logout') }}">Logout</a>
+        </div>
+        <div class="content">
+            <h2>Spending Summary</h2>
+            <div class="chart-container">
+                <canvas id="budgetChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('budgetChart').getContext('2d');
+        const budgetChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: ['Total Expenses', 'Remaining Budget'],
+                datasets: [{
+                    data: [{{ total_expenses }}, {{ remaining_budget }}],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.8)', // Red for expenses
+                        'rgba(75, 192, 192, 0.8)'  // Teal for remaining budget
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(75, 192, 192, 1)'
+                    ],
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                        labels: {
+                            font: {
+                                size: 14,
+                                family: 'Poppins',
+                                weight: '500'
+                            },
+                            color: '#333'
+                        }
+                    },
+                    title: {
+                        display: true,
+                        text: 'Total Budget: Rs.' + {{ total_budget }}.toFixed(2),
+                        font: {
+                            size: 18,
+                            family: 'Poppins',
+                            weight: '500'
+                        },
+                        color: '#444',
+                        padding: {
+                            top: 10,
+                            bottom: 20
+                        }
+                    },
+                    tooltip: {
+                        backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                        titleFont: {
+                            family: 'Poppins',
+                            size: 14
+                        },
+                        bodyFont: {
+                            family: 'Poppins',
+                            size: 12
+                        },
+                        callbacks: {
+                            label: function(context) {
+                                let label = context.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                label += 'Rs.' + context.raw.toFixed(2);
+                                return label;
+                            }
+                        }
+                    }
+                },
+                animation: {
+                    animateScale: true,
+                    animateRotate: true
+                }
+            }
+        });
+    </script>
+</body>
+</html>

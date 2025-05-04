@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Expense Tracker - Reports</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+            min-height: 100vh;
+            padding: 40px;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px; /* Wider container for larger UI */
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(rgba(76, 175, 80, 0.9), rgba(76, 175, 80, 0.9)),
+                        url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+            padding: 5rem 3rem; /* Larger padding for a bigger header */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            width: 80px; /* Size to match the screenshot */
+            height: auto;
+            margin-right: 1.5rem;
+        }
+        h1 {
+            font-size: 2.5rem; /* Larger font size */
+            font-weight: 600;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .menu-bar {
+            background: #fff;
+            padding: 1.5rem 3rem; /* More padding for larger UI */
+            border-bottom: 1px solid #eee;
+        }
+        .menu-bar a {
+            color: #666;
+            text-decoration: none;
+            padding: 0.9rem 1.8rem; /* Larger clickable area */
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+        .menu-bar a:hover {
+            background: #f0f0f0;
+            color: #4CAF50;
+        }
+        .menu-bar a.active {
+            background: #4CAF50;
+            color: white;
+        }
+        .content {
+            padding: 3rem; /* More padding for content */
+        }
+        .summary {
+            background: #fafafa;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .summary-item {
+            flex: 1;
+            min-width: 250px;
+            margin: 0.5rem;
+            text-align: center;
+        }
+        .summary-item h2 {
+            font-size: 1.4rem; /* Larger font size */
+            font-weight: 500;
+            color: #444;
+            margin-bottom: 0.5rem;
+        }
+        .summary-item p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+        .summary-item p.negative {
+            color: #a94442;
+            font-weight: 500;
+        }
+        h2 {
+            font-size: 2rem; /* Larger heading */
+            font-weight: 500;
+            color: #444;
+            margin-bottom: 2rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        th, td {
+            padding: 1.5rem; /* More padding for table cells */
+            text-align: left;
+        }
+        th {
+            background: #4CAF50;
+            color: white;
+            font-weight: 500;
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+        td {
+            color: #555;
+            font-size: 1rem;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        tr:last-child td {
+            border-bottom: none;
+        }
+        tr:hover {
+            background: #fafafa;
+        }
+        .download-btn {
+            display: inline-block;
+            background: #4CAF50;
+            color: white;
+            padding: 1rem 2rem; /* Larger button */
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-top: 2rem;
+            transition: background 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .download-btn:hover {
+            background: #45a049;
+        }
+        .empty-state {
+            text-align: center;
+            padding: 3rem;
+            color: #666;
+            font-size: 1.2rem;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+            .container {
+                max-width: 100%;
+                margin: 10px;
+            }
+            .header {
+                flex-direction: column;
+                text-align: center;
+                padding: 3rem 1.5rem;
+            }
+            .header-left {
+                flex-direction: column;
+                margin-bottom: 1.5rem;
+            }
+            .logo {
+                width: 60px;
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .menu-bar {
+                padding: 1rem;
+            }
+            .menu-bar a {
+                display: block;
+                margin: 0.5rem 0;
+                padding: 0.8rem 1rem;
+                font-size: 1rem;
+            }
+            .content {
+                padding: 1.5rem;
+            }
+            .summary {
+                flex-direction: column;
+            }
+            .summary-item {
+                min-width: 100%;
+            }
+            h2 {
+                font-size: 1.6rem;
+            }
+            th, td {
+                padding: 1rem;
+                font-size: 0.9rem;
+            }
+            .download-btn {
+                width: 100%;
+                text-align: center;
+                padding: 0.8rem 1.5rem;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-left">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="TravelWise Spend Logo" class="logo">
+                <h1>Travel Spending Report</h1>
+            </div>
+        </div>
+        <div class="menu-bar">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('create_budget') }}">Create Budget</a>
+            <a href="{{ url_for('reports') }}" class="active">Reports</a>
+            <a href="{{ url_for('ai_suggestion') }}">AI Suggestion</a> <!-- New Menu Item -->
+            <a href="{{ url_for('graphs') }}">Graphs</a>
+            <a href="{{ url_for('logout') }}">Logout</a>
+        </div>
+        <div class="content">
+            <div class="summary">
+                <div class="summary-item">
+                    <h2>Total Budget</h2>
+                    <p>Rs.{{ "%.2f"|format(total_budget) }}</p>
+                </div>
+                <div class="summary-item">
+                    <h2>Total Expenses</h2>
+                    <p>Rs.{{ "%.2f"|format(total_expenses) }}</p>
+                </div>
+                <div class="summary-item">
+                    <h2>Remaining Budget</h2>
+                    <p {% if remaining_budget < 0 %}class="negative"{% endif %}>Rs.{{ "%.2f"|format(remaining_budget) }}</p>
+                </div>
+            </div>
+
+            <h2>All Expenses</h2>
+            {% if expenses %}
+            <table>
+                <tr>
+                    <th>Travel Place</th>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                </tr>
+                {% for expense in expenses %}
+                <tr>
+                    <td>{{ expense[0] }}</td>
+                    <td>{{ expense[1] }}</td>
+                    <td>Rs.{{ "%.2f"|format(expense[2]) }}</td>
+                    <td>{{ expense[3] }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+            {% else %}
+            <div class="empty-state">
+                <p>No expenses recorded yet.</p>
+            </div>
+            {% endif %}
+
+            <a href="{{ url_for('download_report') }}" class="download-btn">Download as PDF</a>
+        </div>
+    </div>
+</body>
+</html>

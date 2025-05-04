@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Diet Planning - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home_style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <h1>AI Diet Planning</h1>
+            <div class="user-info">
+                <span>Welcome, {{ name }}!</span>
+                <a href="{{ url_for('logout') }}" class="logout-btn">Logout</a>
+            </div>
+        </header>
+
+        <!-- Banner Section -->
+        <section class="banner">
+            <div class="banner-content">
+                <h2>Welcome to Your Personalized Fitness Journey</h2>
+                <p>Create a tailored workout and diet plan to achieve your fitness goals with the power of AI.</p>
+            </div>
+        </section>
+
+        <!-- Fitness Image Section -->
+        <section class="fitness-image-section">
+            <img src="{{ url_for('static', filename='Banner.jpg') }}" alt="Healthy Lifestyle Image with Salad and Dumbbells" class="fitness-image">
+        </section>
+
+        <div class="content-wrapper">
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="flash">{{ message }}</div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+
+            <div class="split-container">
+                <!-- Form Section -->
+                <div class="form-container">
+                    <h2>Create Your Plan</h2>
+                    <form method="POST" id="diet-plan-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" value="{{ name }}" readonly>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="current_weight">Current Weight (kg)</label>
+                            <input type="number" id="current_weight" name="current_weight" step="0.1" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="height">Height (cm)</label>
+                            <input type="number" id="height" name="height" step="0.1" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="target_weight">Target Weight (kg)</label>
+                            <input type="number" id="target_weight" name="target_weight" step="0.1" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="fitness_goals">Fitness Goals</label>
+                            <select id="fitness_goals" name="fitness_goals">
+                                <option value="Gain Muscle">Gain Muscle</option>
+                                <option value="Lose Weight">Lose Weight</option>
+                                <option value="Maintain Weight">Maintain Weight</option>
+                                <option value="Fitness">Fitness</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select id="gender" name="gender">
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="training_method">Training Method</label>
+                            <select id="training_method" name="training_method">
+                                <option value="Meal plan only">Meal plan only</option>
+                                <option value="Exercise routine only">Exercise routine only</option>
+                                <option value="Combined">Combined</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="workout_type">Workout Type</label>
+                            <select id="workout_type" name="workout_type">
+                                <option value="No equipment">No equipment</option>
+                                <option value="Gym">Gym</option>
+                                <option value="Home with equipment">Home with equipment</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="strength_level">Strength Level</label>
+                            <select id="strength_level" name="strength_level">
+                                <option value="Beginner">Beginner</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="generate-btn">Generate Plan</button>
+                    </form>
+                </div>
+
+                <!-- Plan Section -->
+                <div class="plan-container">
+                    {% if plan %}
+                        <h2>Your Generated Plan</h2>
+                        <div class="plan-content">
+                            {{ plan | safe }}
+                        </div>
+                        <a href="{{ url_for('download_pdf') }}" class="download-btn">Download PDF</a>
+                    {% else %}
+                        <div class="plan-placeholder">
+                            <h2>Your Plan Will Appear Here</h2>
+                            <p>Fill out the form on the left to generate your personalized workout and diet plan.</p>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

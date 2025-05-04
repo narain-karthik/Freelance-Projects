@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            display: flex;
+        }
+        .sidebar {
+            width: 260px;
+            background-color: #343a40;
+            color: white;
+            height: 100vh;
+            padding-top: 20px;
+            position: fixed;
+        }
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .sidebar a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: #495057;
+        }
+        .sidebar a.active {
+            background-color: #007bff;
+        }
+        .main-content {
+            margin-left: 260px;
+            padding: 40px;
+            width: calc(100% - 260px);
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            text-align: center;
+        }
+        .btn-custom {
+            background-color: #28a745;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-custom:hover {
+            background-color: #218838;
+        }
+        .upload-section {
+            margin-top: 20px;
+            text-align: left;
+        }
+        input[type="file"] {
+            display: block;
+            margin: 10px auto;
+            font-size: 16px;
+        }
+        .note {
+            font-size: 14px;
+            color: #555;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Admin Panel</h2>
+        <a href="/admin_home" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+        <a href="/manage_users"><i class="fas fa-users"></i> Manage Users</a>
+        <a href="/manage_students"><i class="fas fa-user-graduate"></i> Manage Student Application</a>
+        <a href="/report"><i class="fas fa-book"></i> Report</a>
+        <a href="/logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+    </div>
+    <div class="main-content">
+        <div class="container">
+            <center>
+                <h1>Tamil Nadu Government Arts and Science College</h1>
+            </center>
+            <h2>Welcome, {{ username }} (Admin Page)</h2>
+            <p>Manage users, view reports, and configure settings.</p>
+            <p><h3>You can Download the Student Application Data as Excel Sheet</h3></p>
+            <a href="{{ url_for('export_excel') }}" class="btn btn-custom">Download Excel</a>
+            <div class="upload-section">
+                <h3>Upload Excel File</h3>
+                <form method="POST" enctype="multipart/form-data">
+                    <input type="file" name="file" accept=".xlsx, .xls" class="form-control">
+                    <button type="submit" class="btn btn-custom mt-3">Upload and View Report</button>
+                </form>
+                <p class="note">Note: Uploading a file will process it and redirect you to the Report page.</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Expense Tracker- AI Suggestions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+            min-height: 100vh;
+            padding: 40px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(rgba(76, 175, 80, 0.9), rgba(76, 175, 80, 0.9)),
+                        url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+            padding: 5rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 80px;
+            height: auto;
+            margin-right: 1.5rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu-bar {
+            background: #fff;
+            padding: 1.5rem 3rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .menu-bar a {
+            color: #666;
+            text-decoration: none;
+            padding: 0.9rem 1.8rem;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .menu-bar a:hover {
+            background: #f0f0f0;
+            color: #4CAF50;
+        }
+
+        .menu-bar a.active {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .content {
+            padding: 3rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 500;
+            color: #444;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .form-container {
+            background: #fafafa;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #444;
+            margin-bottom: 0.5rem;
+        }
+
+        select, input {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            background: #fff;
+        }
+
+        select:focus, input:focus {
+            outline: none;
+            border-color: #4CAF50;
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.2);
+        }
+
+        input[type="number"], input[type="text"], input[type="date"] {
+            background: #fafafa;
+        }
+
+        input[readonly] {
+            background: #f0f0f0;
+            cursor: not-allowed;
+        }
+
+        button {
+            width: 100%;
+            padding: 1.2rem;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        button:hover {
+            background: #45a049;
+        }
+
+        .suggestion-card {
+            background: #fafafa;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2rem;
+        }
+
+        .suggestion-card h3 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #4CAF50;
+            margin-bottom: 1rem;
+        }
+
+        .suggestion-card p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .suggestion-card ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-top: 1rem;
+        }
+
+        .suggestion-card li {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 0.5rem;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 3rem;
+            color: #666;
+            font-size: 1.2rem;
+        }
+
+        .empty-state a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .empty-state a:hover {
+            text-decoration: underline;
+        }
+
+        .flash-message {
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .flash-message.error {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .flash-message.success {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+            .container {
+                max-width: 100%;
+                margin: 10px;
+            }
+            .header {
+                flex-direction: column;
+                text-align: center;
+                padding: 3rem 1.5rem;
+            }
+            .header-left {
+                flex-direction: column;
+                margin-bottom: 1.5rem;
+            }
+            .logo {
+                width: 60px;
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .menu-bar {
+                padding: 1rem;
+            }
+            .menu-bar a {
+                display: block;
+                margin: 0.5rem 0;
+                padding: 0.8rem 1rem;
+                font-size: 1rem;
+            }
+            .content {
+                padding: 1.5rem;
+            }
+            h2 {
+                font-size: 1.6rem;
+            }
+            .form-container {
+                padding: 1.5rem;
+            }
+            .form-group {
+                margin-bottom: 1rem;
+            }
+            label {
+                font-size: 1rem;
+            }
+            select, input {
+                padding: 0.8rem;
+                font-size: 1rem;
+            }
+            button {
+                padding: 1rem;
+                font-size: 1rem;
+            }
+            .suggestion-card {
+                padding: 1.5rem;
+            }
+            .suggestion-card h3 {
+                font-size: 1.3rem;
+            }
+            .suggestion-card p, .suggestion-card li {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 320px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                margin: 5px;
+            }
+            .header {
+                padding: 2rem 1rem;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            .logo {
+                width: 50px;
+            }
+            .menu-bar a {
+                padding: 0.6rem 0.8rem;
+                font-size: 0.9rem;
+            }
+            .content {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4rem;
+            }
+            .form-container {
+                padding: 1rem;
+            }
+            label, select, input, button {
+                font-size: 0.9rem;
+            }
+            .suggestion-card {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <noscript>
+        <div style="text-align: center; padding: 1rem; color: #ff0000;">
+            <p>JavaScript is required to calculate total days and daily budget. Please enable JavaScript in your browser.</p>
+        </div>
+    </noscript>
+    <div class="container">
+        <header class="header">
+            <div class="header-left">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="TravelWise Spend Logo" class="logo">
+                <h1>AI Suggestions</h1>
+            </div>
+        </header>
+        <nav class="menu-bar">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('create_budget') }}">Create Budget</a>
+            <a href="{{ url_for('reports') }}">Reports</a>
+            <a href="{{ url_for('graphs') }}">Graphs</a>
+            <a href="{{ url_for('ai_suggestion') }}" class="active">AI Suggestion</a>
+            <a href="{{ url_for('logout') }}">Logout</a>
+        </nav>
+        <div class="content">
+            <!-- Display Flash Messages -->
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="flash-message {{ category }}">{{ message }}</div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+
+            <h2>Smart Suggestions for Your Next Trip</h2>
+            <div class="form-container">
+                <form method="POST" action="{{ url_for('ai_suggestion') }}" aria-label="Travel Preferences Form">
+                    <div class="form-group">
+                        <label for="state">Select State</label>
+                        <select id="state" name="state" required>
+                            <option value="" disabled selected>Select a state</option>
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                            <option value="Assam">Assam</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Chhattisgarh">Chhattisgarh</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Manipur">Manipur</option>
+                            <option value="Meghalaya">Meghalaya</option>
+                            <option value="Mizoram">Mizoram</option>
+                            <option value="Nagaland">Nagaland</option>
+                            <option value="Odisha">Odisha</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Sikkim">Sikkim</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="Tripura">Tripura</option>
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option value="Uttarakhand">Uttarakhand</option>
+                            <option value="West Bengal">West Bengal</option>
+                            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                            <option value="Ladakh">Ladakh</option>
+                            <option value="Lakshadweep">Lakshadweep</option>
+                            <option value="Puducherry">Puducherry</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="destination_type">Destination Type</label>
+                        <select id="destination_type" name="destination_type" required>
+                            <option value="" disabled selected>Select a destination type</option>
+                            <option value="Hill Station">Hill Station</option>
+                            <option value="Beach">Beach</option>
+                            <option value="Temples">Temples</option>
+                            <option value="Govt Tourist Spot">Govt Tourist Spot</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="place">Place to Visit (Optional)</label>
+                        <input type="text" id="place" name="place" placeholder="e.g., Shimla">
+                    </div>
+                    <div class="form-group">
+                        <label for="date_from">From Date</label>
+                        <input type="date" id="date_from" name="date_from" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date_to">To Date</label>
+                        <input type="date" id="date_to" name="date_to" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="total_days">Total Days</label>
+                        <input type="number" id="total_days" name="total_days" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="total_budget">Total Budget (Rs.)</label>
+                        <input type="number" id="total_budget" name="total_budget" step="0.01" min="0" required placeholder="e.g., 10000.00">
+                    </div>
+                    <div class="form-group">
+                        <label for="daily_budget">Daily Budget (Rs.)</label>
+                        <input type="number" id="daily_budget" name="daily_budget" step="0.01" readonly>
+                    </div>
+                    <button type="submit">Get Suggestions</button>
+                </form>
+            </div>
+            <!-- Debug: Print suggestions data -->
+            <div style="padding: 1rem; background: #f0f0f0; margin-bottom: 1rem;">
+                <p><strong>Debug - Suggestions Data:</strong> {{ suggestions | tojson }}</p>
+            </div>
+            <div aria-live="polite">
+                {% if suggestions %}
+                    {% for suggestion in suggestions %}
+                        <div class="suggestion-card">
+                            <h3>{{ suggestion.title }}</h3>
+                            <p>{{ suggestion.description }}</p>
+                            {% if suggestion.list_items %}
+                                <ul>
+                                    {% for item in suggestion.list_items %}
+                                        <li>{{ item }}</li>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <div class="empty-state">
+                        <p>Fill out the form above to get personalized travel suggestions!</p>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Calculate total days and daily budget dynamically
+        const dateFromInput = document.getElementById('date_from');
+        const dateToInput = document.getElementById('date_to');
+        const totalDaysInput = document.getElementById('total_days');
+        const totalBudgetInput = document.getElementById('total_budget');
+        const dailyBudgetInput = document.getElementById('daily_budget');
+        const form = document.querySelector('form');
+
+        function calculateDaysAndBudget() {
+            const dateFrom = new Date(dateFromInput.value);
+            const dateTo = new Date(dateToInput.value);
+            const totalBudget = parseFloat(totalBudgetInput.value) || 0;
+
+            if (dateFrom && dateTo) {
+                if (dateFrom > dateTo) {
+                    alert('To Date must be after From Date.');
+                    dateToInput.value = '';
+                    totalDaysInput.value = '';
+                    dailyBudgetInput.value = '';
+                    return;
+                }
+                const timeDiff = dateTo - dateFrom;
+                const totalDays = Math.ceil(timeDiff / (1000 * 60 * 60 * 24)) + 1; // Include both start and end days
+                totalDaysInput.value = totalDays;
+
+                if (totalBudget > 0 && totalDays > 0) {
+                    const dailyBudget = totalBudget / totalDays;
+                    dailyBudgetInput.value = dailyBudget.toFixed(2);
+                } else {
+                    dailyBudgetInput.value = '';
+                }
+            } else {
+                totalDaysInput.value = '';
+                dailyBudgetInput.value = '';
+            }
+        }
+
+        dateFromInput.addEventListener('change', calculateDaysAndBudget);
+        dateToInput.addEventListener('change', calculateDaysAndBudget);
+        totalBudgetInput.addEventListener('input', calculateDaysAndBudget);
+
+        form.addEventListener('submit', (e) => {
+            if (!totalDaysInput.value || !dailyBudgetInput.value) {
+                e.preventDefault();
+                alert('Please ensure all dates and budget are correctly filled.');
+            }
+        });
+    </script>
+</body>
+</html>

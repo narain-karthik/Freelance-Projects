@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif; /* Use a common font, as xhtml2pdf may not load external fonts */
+    color: #333;
+    margin: 0;
+    padding: 20px; /* Use px instead of mm for compatibility */
+    background-color: #fff;
+}
+
+.pdf-container {
+    max-width: 800px; /* Approximate A4 width in pixels */
+    margin: 0 auto;
+}
+
+h1 {
+    color: #00d4ff;
+    font-size: 24pt;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.plan-content {
+    line-height: 1.6;
+}
+
+.plan-content h1,
+.plan-content h2,
+.plan-content h3 {
+    color: #00d4ff;
+    margin: 15px 0;
+}
+
+.plan-content h1 {
+    font-size: 20pt;
+}
+
+.plan-content h2 {
+    font-size: 18pt;
+}
+
+.plan-content h3 {
+    font-size: 16pt;
+}
+
+.plan-content p {
+    margin: 10px 0;
+    font-size: 12pt;
+}
+
+.plan-content ul,
+.plan-content ol {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.plan-content li {
+    margin: 5px 0;
+    font-size: 12pt;
+}
+
+.plan-content strong {
+    color: #000;
+}
+
+.plan-content em {
+    color: #555;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 15px 0;
+}

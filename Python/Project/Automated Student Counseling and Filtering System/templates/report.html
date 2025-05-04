@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report - Application Status</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow-x: auto;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .students-table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: auto;
+        }
+
+        .students-table th, .students-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            white-space: nowrap;
+        }
+
+        .students-table th {
+            background-color: #007bff;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .students-table tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .btn-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .download-btn:hover {
+            background-color: #218838;
+            color: white;
+            text-decoration: none;
+        }
+
+        .download-btn i {
+            margin-right: 8px;
+        }
+
+        .count {
+            font-size: 18px;
+            color: #555;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1><i class="fas fa-file-alt"></i> Report - Application Status</h1>
+
+        <!-- Selected Applications -->
+        <h2><i class="fas fa-user-graduate"></i> Selected Applications <span class="count">({{ selected_count }})</span></h2>
+        <div class="btn-container">
+            <a href="{{ url_for('download_selected') }}" class="download-btn">
+                <i class="fas fa-file-download"></i> Download Selected List
+            </a>
+        </div>
+        <div class="table-responsive">
+            <table class="students-table table table-striped table-hover">
+                {{ selected_students_html|safe }}
+            </table>
+        </div>
+
+        <!-- Waiting List Applications -->
+        <h2><i class="fas fa-clock"></i> Waiting List Applications <span class="count">({{ waiting_count }})</span></h2>
+        <div class="btn-container">
+            <a href="{{ url_for('download_waiting') }}" class="download-btn">
+                <i class="fas fa-file-download"></i> Download Waiting List
+            </a>
+        </div>
+        <div class="table-responsive">
+            <table class="students-table table table-striped table-hover">
+                {{ waiting_list_html|safe }}
+            </table>
+        </div>
+
+        <!-- Rejected Applications -->
+        <h2><i class="fas fa-user-times"></i> Rejected Applications <span class="count">({{ rejected_count }})</span></h2>
+        <div class="btn-container">
+            <a href="{{ url_for('download_rejected') }}" class="download-btn">
+                <i class="fas fa-file-download"></i> Download Rejected List
+            </a>
+        </div>
+        <div class="table-responsive">
+            <table class="students-table table table-striped table-hover">
+                {{ rejected_list_html|safe }}
+            </table>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

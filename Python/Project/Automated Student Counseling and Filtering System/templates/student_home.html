@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Application Form</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #555;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        select {
+            cursor: pointer;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .section-title {
+            font-size: 18px;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        .semester-section, .year-section, .grade-section {
+            margin-left: 20px;
+        }
+
+        .semester-section input, .year-section input {
+            width: 45%;
+            display: inline-block;
+            margin-right: 10%;
+        }
+
+        .semester-section input[type="number"], .year-section input[type="number"] {
+            width: 80%;
+        }
+
+        .hidden-section {
+            display: none;
+        }
+         .logout-button {
+        display: inline-block;
+        background-color: #4CAF50; /* Green */
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+
+    .logout-button:hover {
+        background-color: #388E3C; /* Darker Green */
+    }
+    </style>
+    <script>
+        function generateApplicationNo() {
+            document.getElementById("application_no").value =Math.floor(10000 + Math.random() * 90000);
+        }
+
+        function toggleFields() {
+            const examPattern = document.getElementById("exam_pattern").value;
+            const examMethod = document.getElementById("exam_assessment_method").value;
+            const semesterFields = document.getElementById("semester_fields");
+            const yearFields = document.getElementById("year_fields");
+            const gradeSemesterFields = document.getElementById("grade_semester_fields");
+            const gradeYearFields = document.getElementById("grade_year_fields");
+
+            semesterFields.style.display = "none";
+            yearFields.style.display = "none";
+            gradeSemesterFields.style.display = "none";
+            gradeYearFields.style.display = "none";
+
+            if (examPattern === "Mark" && examMethod === "Semester") {
+                semesterFields.style.display = "block";
+            } else if (examPattern === "Mark" && examMethod === "Grade") {
+                yearFields.style.display = "block";
+            } else if (examPattern === "Grade" && examMethod === "Semester") {
+                gradeSemesterFields.style.display = "block";
+            } else if (examPattern === "Grade" && examMethod === "Grade") {
+                gradeYearFields.style.display = "block";
+            }
+        }
+
+        function generateFields() {
+            const semesterFieldsDiv = document.getElementById("semester_fields");
+            const yearFieldsDiv = document.getElementById("year_fields");
+            const gradeSemesterFieldsDiv = document.getElementById("grade_semester_fields");
+            const gradeYearFieldsDiv = document.getElementById("grade_year_fields");
+
+            // Clear existing fields (important to prevent duplicates)
+            semesterFieldsDiv.innerHTML = "";
+            yearFieldsDiv.innerHTML = "";
+            gradeSemesterFieldsDiv.innerHTML = "";
+            gradeYearFieldsDiv.innerHTML = "";
+
+
+            // Semester Fields
+            for (let i = 1; i <= 6; i++) {
+                const semesterSection = document.createElement('div');
+                semesterSection.innerHTML = `<h4>Semester ${i}</h4>`;
+                for (let j = 1; j <= 4; j++) {
+                    semesterSection.innerHTML += `<label>Semester ${i} Part <span class="math-inline">\{j\} Max Mark\:</label\><input type\="number" name\="semester</span>{i}_Part${j}_maxMark" required><br><br>`;
+                    semesterSection.innerHTML += `<label>Semester ${i} Part <span class="math-inline">\{j\} Obtained\:</label\><input type\="number" name\="semester</span>{i}_Part${j}_Obtained" required><br><br>`;
+                }
+                semesterFieldsDiv.appendChild(semesterSection);
+            }
+
+            // Year Fields
+            for (let i = 1; i <= 3; i++) {
+                const yearSection = document.createElement('div');
+                yearSection.innerHTML = `<h4>Year ${i}</h4>`;
+                for (let j = 1; j <= 4; j++) {
+                    yearSection.innerHTML += `<label>Year ${i} Part <span class="math-inline">\{j\} Max Mark\:</label\><input type\="number" name\="year</span>{i}_Part${j}_maxMark" required><br><br>`;
+                    yearSection.innerHTML += `<label>Year ${i} Part <span class="math-inline">\{j\} Obtained\:</label\><input type\="number" name\="year</span>{i}_Part${j}_Obtained" required><br><br>`;
+                }
+                yearFieldsDiv.appendChild(yearSection);
+            }
+
+            // Grade Semester Fields
+            for (let i = 1; i <= 6; i++) {
+                const semesterGradeSection = document.createElement('div');
+                semesterGradeSection.innerHTML = `<h4>Semester ${i}</h4>`;
+                semesterGradeSection.innerHTML += `<label>Semester <span class="math-inline">\{i\} CGPA Max\:</label\><input type\="number" name\="semester</span>{i}_CGPA_Max" step="0.01" required><br><br>`;
+                semesterGradeSection.innerHTML += `<label>Semester <span class="math-inline">\{i\} CGPA Obtained\:</label\><input type\="number" name\="semester</span>{i}_CGPA_Obtained" step="0.01" required><br><br>`;
+                gradeSemesterFieldsDiv.appendChild(semesterGradeSection);
+            }
+
+            // Grade Year Fields
+            for (let i = 1; i <= 3; i++) {
+                const yearGradeSection = document.createElement('div');
+                yearGradeSection.innerHTML = `<h4>Year ${i}</h4>`;
+                yearGradeSection.innerHTML += `<label>Year <span class="math-inline">\{i\} CGPA Max\:</label\><input type\="number" name\="year</span>{i}_CGPA_Max" step="0.01" required><br><br>`;
+                yearGradeSection.innerHTML += `<label>Year <span class="math-inline">\{i\} CGPA Obtained\:</label\><input type\="number" name\="year</span>{i}_CGPA_Obtained" step="0.01" required><br><br>`;
+                gradeYearFieldsDiv.appendChild(yearGradeSection);
+            }
+        }
+    </script>
+</head>
+<body onload="generateApplicationNo()">
+    <div class="container">
+         <center>
+            <h1>Tamil Nadu Government Arts and Science College</h1>
+             <h2>Welcome, {{ username }} (Student)</h2>
+             <h3> <p>Student Admission Application Form</p></h3>
+             <a href="/logout" class="logout-button">Logout</a>
+
+       </center>
+
+
+
+        <h2>Application Form</h2>
+        <form method="POST">  <label for="application_no">Application No:</label>
+            <input type="text" id="application_no" name="application_no" readonly><br><br>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select><br><br>
+
+            <label for="community">Community:</label>
+            <select id="community" name="community" required>
+                <option value="OBC">OBC</option>
+                <option value="BC">BC</option>
+                <option value="SC">SC</option>
+                <option value="ST">ST</option>
+                <option value="BCM">BCM</option>
+                <option value="MBC">MBC</option>
+            </select><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="branch_choice">Branch Choice:</label>
+            <input type="text" id="branch_choice" name="branch_choice" required><br><br>
+
+            <label for="ug_college_studied">UG College Studied:</label>
+            <input type="text" id="ug_college_studied" name="ug_college_studied" required><br><br>
+
+            <label for="degree">Degree:</label>
+            <select id="degree" name="degree" required>
+                <option value="B.Sc">B.Sc</option>
+                <option value="B.Com">B.Com</option>
+                <option value="B.A">B.A</option>
+                <option value="BBA">BBA</option>
+                <option value="BCA">BCA</option>
+            </select><br><br>
+
+            <label for="branch_of_study">Branch of Study:</label>
+            <select id="branch_of_study" name="branch_of_study" required>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Computer Application">Computer Application</option>
+                 <option value="Information Technology">Information Technology</option>
+                <option value="Business Administration">Business Administration</option>
+            </select><br><br>
+
+            <label for="university_name">University Name:</label>
+            <input type="text" id="university_name" name="university_name" required><br><br>
+
+            <label for="university_reg_number">University Reg Number:</label>
+            <input type="text" id="university_reg_number" name="university_reg_number" required><br><br>
+
+            <label for="exam_pattern">Exam Pattern:</label>
+            <select id="exam_pattern" name="exam_pattern" onchange="toggleFields()">
+                <option value="Mark">Mark</option>
+                <option value="Grade">Grade</option>
+            </select><br><br>
+
+            <label for="exam_assessment_method">Exam Assessment Method:</label>
+            <select id="exam_assessment_method" name="exam_assessment_method" onchange="toggleFields()">
+                <option value="Semester">Semester</option>
+                <option value="Grade">Grade</option>
+            </select><br><br>
+
+            <div id="semester_fields" class="hidden-section">
+                <div class="section-title">Semester Marks</div>
+                </div>
+
+            <div id="year_fields" class="hidden-section">
+                <div class="section-title">Year Marks</div>
+                </div>
+
+            <div id="grade_semester_fields" class="hidden-section">
+                <div class="section-title">Semester CGPA</div>
+                </div>
+
+            <div id="grade_year_fields" class="hidden-section">
+                <div class="section-title">Year CGPA</div>
+                </div>
+
+
+    <input type="submit" value="Submit">
+
+        </form>
+
+
+    </div>
+
+    <script>
+         // Dynamically generate fields for the semester, year, and grade sections
+        function generateFields() {
+            // Semester Fields
+            for (let i = 1; i <= 6; i++) {
+                let semesterSection = document.createElement('div');
+                semesterSection.innerHTML = `<h4>Semester ${i}</h4>`;
+                for (let j = 1; j <= 4; j++) {
+                    semesterSection.innerHTML += `<label>Semester ${i} Part ${j} Max Mark:</label><input type="number" name="semester${i}_Part${j}_maxMark"><br><br>`;
+                    semesterSection.innerHTML += `<label>Semester ${i} Part ${j} Obtained:</label><input type="number" name="semester${i}_Part${j}_Obtained"><br><br>`;
+                }
+                document.getElementById("semester_fields").appendChild(semesterSection);
+            }
+
+            // Year Fields
+            for (let i = 1; i <= 3; i++) {
+                let yearSection = document.createElement('div');
+                yearSection.innerHTML = `<h4>Year ${i}</h4>`;
+                for (let j = 1; j <= 4; j++) {
+                    yearSection.innerHTML += `<label>Year ${i} Part ${j} Max Mark:</label><input type="number" name="year${i}_Part${j}_maxMark"><br><br>`;
+                    yearSection.innerHTML += `<label>Year ${i} Part ${j} Obtained:</label><input type="number" name="year${i}_Part${j}_Obtained"><br><br>`;
+                }
+                document.getElementById("year_fields").appendChild(yearSection);
+            }
+
+            // Grade Semester Fields
+            for (let i = 1; i <= 6; i++) {
+                let semesterGradeSection = document.createElement('div');
+                semesterGradeSection.innerHTML = `<h4>Semester ${i}</h4>`;
+                semesterGradeSection.innerHTML += `<label>Semester ${i} CGPA Max:</label><input type="number" name="semester${i}_CGPA_Max"><br><br>`;
+                semesterGradeSection.innerHTML += `<label>Semester ${i} CGPA Obtained:</label><input type="number" name="semester${i}_CGPA_Obtained"><br><br>`;
+                document.getElementById("grade_semester_fields").appendChild(semesterGradeSection);
+            }
+
+            // Grade Year Fields
+            for (let i = 1; i <= 3; i++) {
+                let yearGradeSection = document.createElement('div');
+                yearGradeSection.innerHTML = `<h4>Year ${i}</h4>`;
+                yearGradeSection.innerHTML += `<label>Year ${i} CGPA Max:</label><input type="number" name="year${i}_CGPA_Max"><br><br>`;
+                yearGradeSection.innerHTML += `<label>Year ${i} CGPA Obtained:</label><input type="number" name="year${i}_CGPA_Obtained"><br><br>`;
+                document.getElementById("grade_year_fields").appendChild(yearGradeSection);
+            }
+        }
+
+        // Call the function on page load
+        generateFields();
+    </script>
+
+</body>
+</html>

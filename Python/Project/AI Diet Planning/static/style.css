@@ -1,0 +1,211 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e0e7ff 100%);
+}
+
+/* Containers */
+.login-container,
+.register-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Cards */
+.login-card,
+.register-card {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.login-card:hover,
+.register-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Logo/Icon */
+.logo {
+    font-size: 40px;
+    color: #00d4ff;
+    margin-bottom: 15px;
+}
+
+/* Titles */
+h1 {
+    font-size: 28px;
+    color: #00d4ff;
+    margin: 0 0 10px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 20px;
+    color: #333;
+    margin: 0 0 20px;
+    font-weight: 400;
+}
+
+/* Flash Messages */
+.flash {
+    background-color: #ffe6e6;
+    color: #cc0000;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+.form-group input:focus {
+    border-color: #00d4ff;
+    box-shadow: 0 0 8px rgba(0, 212, 255, 0.2);
+    outline: none;
+}
+
+/* Password Toggle */
+.password-group {
+    position: relative;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #666;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.toggle-password:hover {
+    color: #00d4ff;
+}
+
+/* Buttons */
+.login-btn,
+.register-btn {
+    background-color: #00d4ff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    width: 100%;
+    display: block;
+}
+
+.login-btn:hover,
+.register-btn:hover {
+    background-color: #00b8e6;
+    transform: scale(1.02);
+}
+
+/* Links */
+.register-link,
+.login-link {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.register-link a,
+.login-link a {
+    color: #00d4ff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.register-link a:hover,
+.login-link a:hover {
+    color: #00b8e6;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .login-container,
+    .register-container {
+        padding: 15px;
+    }
+
+    .login-card,
+    .register-card {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .form-group label {
+        font-size: 13px;
+    }
+
+    .form-group input {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .login-btn,
+    .register-btn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .register-link,
+    .login-link {
+        font-size: 13px;
+    }
+}

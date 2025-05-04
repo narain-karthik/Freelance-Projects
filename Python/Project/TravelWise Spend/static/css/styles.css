@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    min-height: 100vh;
+    padding: 40px;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.header {
+    background: linear-gradient(rgba(76, 175, 80, 0.9), rgba(76, 175, 80, 0.9)),
+                url('/static/images/background.jpg') center/cover no-repeat;
+    padding: 5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin-right: 1.5rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.menu-bar {
+    background: #fff;
+    padding: 1.5rem 3rem;
+    border-bottom: 1px solid #eee;
+}
+
+.menu-bar a {
+    color: #666;
+    text-decoration: none;
+    padding: 0.9rem 1.8rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.menu-bar a:hover {
+    background: #f0f0f0;
+    color: #4CAF50;
+}
+
+.menu-bar a.active {
+    background: #4CAF50;
+    color: white;
+}
+
+.content {
+    padding: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.form-container {
+    background: #fafafa;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 0.5rem;
+}
+
+select, input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+}
+
+select:focus, input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.2);
+}
+
+input[type="number"], input[type="text"], input[type="date"] {
+    background: #fafafa;
+}
+
+input[readonly] {
+    background: #f0f0f0;
+    cursor: not-allowed;
+}
+
+button {
+    width: 100%;
+    padding: 1.2rem;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: #45a049;
+}
+
+.suggestion-card {
+    background: #fafafa;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+}
+
+.suggestion-card h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+
+.suggestion-card p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.suggestion-card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 1rem;
+}
+
+.suggestion-card li {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 3rem;
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.empty-state a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.empty-state a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+    .container {
+        max-width: 100%;
+        margin: 10px;
+    }
+    .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem 1.5rem;
+    }
+    .header-left {
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+    }
+    .logo {
+        width: 60px;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .menu-bar {
+        padding: 1rem;
+    }
+    .menu-bar a {
+        display: block;
+        margin: 0.5rem 0;
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+    }
+    .content {
+        padding: 1.5rem;
+    }
+    h2 {
+        font-size: 1.6rem;
+    }
+    .form-container {
+        padding: 1.5rem;
+    }
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    label {
+        font-size: 1rem;
+    }
+    select, input {
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+    button {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    .suggestion-card {
+        padding: 1.5rem;
+    }
+    .suggestion-card h3 {
+        font-size: 1.3rem;
+    }
+    .suggestion-card p, .suggestion-card li {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        padding: 10px;
+    }
+    .container {
+        margin: 5px;
+    }
+    .header {
+        padding: 2rem 1rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .logo {
+        width: 50px;
+    }
+    .menu-bar a {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.9rem;
+    }
+    .content {
+        padding: 1rem;
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+    .form-container {
+        padding: 1rem;
+    }
+    label, select, input, button {
+        font-size: 0.9rem;
+    }
+    .suggestion-card {
+        padding: 1rem;
+    }
+}
