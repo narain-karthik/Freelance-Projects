@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Logs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+        .log-container {
+            max-width: 95%;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+            word-break: break-word;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .status-success {
+            color: green;
+            font-weight: bold;
+        }
+        .status-error {
+            color: red;
+            font-weight: bold;
+        }
+        .status-warning {
+            color: orange;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="log-container">
+        <h2>Server Logs</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>IP</th>
+                    <th>Referrer</th>
+                    <th>Request</th>
+                    <th>Status</th>
+                    <th>Timestamp</th>
+                    <th>User-Agent</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for log in logs %}
+                <tr>
+                    <td>{{ log.ip }}</td>
+                    <td>{{ log.referrer }}</td>
+                    <td>{{ log.request }}</td>
+                    <td class="{% if log.status.startswith('2') %}status-success{% elif log.status.startswith('4') or log.status.startswith('5') %}status-error{% else %}status-warning{% endif %}">
+                        {{ log.status }}
+                    </td>
+                    <td>{{ log.timestamp }}</td>
+                    <td>{{ log.user_agent }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

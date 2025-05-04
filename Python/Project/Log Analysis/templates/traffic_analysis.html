@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Analysis</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- For Graphs -->
+
+    <style>
+        .download-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="mb-3">Traffic Analysis</h2>
+
+        <!-- Download Buttons -->
+        <div class="download-buttons">
+            <a href="/download/pdf" class="btn btn-danger">Download PDF Report</a>
+        </div>
+
+        <hr>
+
+        <!-- Graph Section -->
+        <h4>Traffic Overview</h4>
+        <canvas id="trafficChart"></canvas>
+        <p id="chartMessage" class="text-muted">Loading traffic data...</p>
+        <button id="downloadGraph" class="btn btn-success mt-2">Download Graph</button>
+
+        <hr>
+
+        <!-- Live Traffic Logs -->
+        <h4>Live Traffic Logs (Auto Refresh)</h4>
+        <table id="logTable" class="display table table-striped">
+            <thead>
+                <tr>
+                    <th>IP</th>
+                    <th>Timestamp</th>
+                    <th>Request</th>
+                    <th>Status</th>
+                    <th>Size</th>
+                </tr>
+            </thead>
+            <tbody>
+             <!-- Data will be inserted here dynamically -->
+            </tbody>
+
+        </table>
+  <a href="/live_traffic_analysis">
+    <button style="
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        display: block;
+        margin: 20px auto;
+    ">
+        🔍 View Live Traffic Analysis
+    </button>
+</a>
+        <hr>
+
+        <!-- HTTP Errors & Security Issues -->
+        <h4>HTTP Errors & Security Issues</h4>
+        <table id="errorTable" class="display table table-striped">
+            <thead>
+                <tr>
+                    <th>IP</th>
+                    <th>Timestamp</th>
+                    <th>Error Type</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for error in error_logs %}
+                <tr>
+                    <td>{{ error["IP"] }}</td>
+                    <td>{{ error["Timestamp"] }}</td>
+                    <td>{{ error["ErrorType"] }}</td>
+                    <td>{{ error["Details"] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('#logTable').DataTable({ "pageLength": 10 });  // Enables pagination, search, sorting
+            $('#errorTable').DataTable({ "pageLength": 5 });
+
+            fetchTrafficLogs();  // Load initial data
+            setInterval(fetchTrafficLogs, 5000); // Auto-refresh every 5 seconds
+        });
+
+        // Fetch Live Traffic Logs
+        function fetchTrafficLogs() {
+            fetch('/api/live_traffic')
+                .then(response => response.json())
+                .then(data => {
+                    let tableBody = $("#logTable tbody");
+                    tableBody.empty();  // Clear previous data
+
+                    data.forEach(log => {
+                        let row = `
+                            <tr>
+                                <td>${log.IP}</td>
+                                <td>${log.Timestamp}</td>
+                                <td>${log.Request}</td>
+                                <td>${log.Status}</td>
+                                <td>${log.Size}</td>
+                            </tr>`;
+                        tableBody.append(row);
+                    });
+                })
+                .catch(error => console.error("Error fetching live traffic:", error));
+        }
+
+        // Fetch Graph Data from Flask API
+        fetch('/api/traffic_chart')
+            .then(response => response.json())
+            .then(data => {
+                $("#chartMessage").hide();  // Hide loading message
+                const ctx = document.getElementById('trafficChart').getContext('2d');
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: data.labels,
+                        datasets: [{
+                            label: 'HTTP Status Codes',
+                            data: data.values,
+                            backgroundColor: ['blue', 'red', 'green', 'orange'],
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: { display: false }
+                        }
+                    }
+                });
+            })
+            .catch(error => {
+                console.error("Error fetching graph data:", error);
+                $("#chartMessage").text("Error loading graph data.");
+            });
+
+        // Download Graph as PNG
+        document.getElementById('downloadGraph').addEventListener('click', function () {
+            let canvas = document.getElementById('trafficChart');
+            let link = document.createElement('a');
+            link.href = canvas.toDataURL('image/png');
+            link.download = 'traffic_analysis.png';
+            link.click();
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Traffic Analysis</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        canvas {
+            display: block;
+            margin: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Live Traffic Analysis</h1>
+
+    <!-- Traffic Graph -->
+    <h2>Live Traffic Status Codes</h2>
+    <canvas id="trafficChart"></canvas>
+
+    <!-- Live Traffic Table -->
+    <h2>Live Traffic Monitoring</h2>
+    <table id="trafficTable">
+        <thead>
+            <tr>
+                <th>IP Address</th>
+                <th>Timestamp</th>
+                <th>Request</th>
+                <th>Status</th>
+                <th>Size</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Live traffic data will be loaded here dynamically -->
+        </tbody>
+    </table>
+</div>
+
+<script>
+    async function fetchLiveTraffic() {
+        const response = await fetch('/api/live_traffic');
+        const data = await response.json();
+
+        // Update table
+        const tableBody = document.querySelector("#trafficTable tbody");
+        tableBody.innerHTML = "";
+        data.forEach(entry => {
+            const row = `
+                <tr>
+                    <td>${entry.IP}</td>
+                    <td>${entry.Timestamp}</td>
+                    <td>${entry.Request}</td>
+                    <td>${entry.Status}</td>
+                    <td>${entry.Size}</td>
+                </tr>
+            `;
+            tableBody.innerHTML += row;
+        });
+
+        // Update Graph
+        const statusCounts = {};
+        data.forEach(entry => {
+            statusCounts[entry.Status] = (statusCounts[entry.Status] || 0) + 1;
+        });
+
+        const ctx = document.getElementById("trafficChart").getContext("2d");
+        new Chart(ctx, {
+            type: "bar",
+            data: {
+                labels: Object.keys(statusCounts),
+                datasets: [{
+                    label: "Live Traffic Status Codes",
+                    data: Object.values(statusCounts),
+                    backgroundColor: ["blue", "red", "orange", "green", "purple"],
+                }]
+            }
+        });
+    }
+
+    // Fetch live traffic data every 5 seconds
+    setInterval(fetchLiveTraffic, 5000);
+    fetchLiveTraffic();
+</script>
+
+</body>
+</html>
