@@ -1,0 +1,19 @@
+D:\.NET\Car Showroom Management\Car Showroom Management\bin\Debug\Car Showroom Management.exe
+D:\.NET\Car Showroom Management\Car Showroom Management\bin\Debug\Car Showroom Management.pdb
+D:\.NET\Car Showroom Management\Car Showroom Management\bin\Debug\Car Showroom Management.xml
+D:\.NET\Car Showroom Management\Car Showroom Management\obj\x86\Debug\Car_Showroom_Management.Create.resources
+D:\.NET\Car Showroom Management\Car Showroom Management\obj\x86\Debug\Car_Showroom_Management.Form1.resources
+D:\.NET\Car Showroom Management\Car Showroom Management\obj\x86\Debug\Car_Showroom_Management.Resources.resources
+D:\.NET\Car Showroom Management\Car Showroom Management\obj\x86\Debug\Car Showroom Management.vbproj.GenerateResource.Cache
+D:\.NET\Car Showroom Management\Car Showroom Management\obj\x86\Debug\Car Showroom Management.exe
+D:\.NET\Car Showroom Management\Car Showroom Management\obj\x86\Debug\Car Showroom Management.xml
+D:\.NET\Car Showroom Management\Car Showroom Management\obj\x86\Debug\Car Showroom Management.pdb
+D:\.NET\Car Showroom Management\Car Showroom Management\obj\x86\Debug\Car_Showroom_Management.AdminHome.resources
+D:\.NET\Car Showroom Management\Car Showroom Management\obj\x86\Debug\Car_Showroom_Management.UserHome.resources
+D:\.NET\Car Showroom Management\Car Showroom Management\obj\x86\Debug\Car_Showroom_Management.AddStaffDetails.resources
+D:\.NET\Car Showroom Management\Car Showroom Management\bin\Debug\Car Showroom Management.exe.config
+D:\.NET\Car Showroom Management\Car Showroom Management\obj\x86\Debug\Car_Showroom_Management.ViewStaffDetails.resources
+D:\.NET\Car Showroom Management\Car Showroom Management\obj\x86\Debug\Car_Showroom_Management.StaffAttendance.resources
+D:\.NET\Car Showroom Management\Car Showroom Management\obj\x86\Debug\Car_Showroom_Management.ViewStaffAttendance.resources
+D:\.NET\Car Showroom Management\Car Showroom Management\obj\x86\Debug\Car_Showroom_Management.SoldOut.resources
+D:\.NET\Car Showroom Management\Car Showroom Management\obj\x86\Debug\Car_Showroom_Management.ViewSold.resources

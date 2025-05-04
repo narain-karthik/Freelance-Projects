@@ -1,0 +1,19 @@
+D:\.NET\Credit Sale Management System\Credit Sale Management System\bin\Debug\Credit Sale Management System.exe
+D:\.NET\Credit Sale Management System\Credit Sale Management System\bin\Debug\Credit Sale Management System.pdb
+D:\.NET\Credit Sale Management System\Credit Sale Management System\bin\Debug\Credit Sale Management System.xml
+D:\.NET\Credit Sale Management System\Credit Sale Management System\obj\x86\Debug\Credit_Sale_Management_System.CustomerDetails.resources
+D:\.NET\Credit Sale Management System\Credit Sale Management System\obj\x86\Debug\Credit_Sale_Management_System.Form1.resources
+D:\.NET\Credit Sale Management System\Credit Sale Management System\obj\x86\Debug\Credit_Sale_Management_System.HomePage.resources
+D:\.NET\Credit Sale Management System\Credit Sale Management System\obj\x86\Debug\Credit_Sale_Management_System.Resources.resources
+D:\.NET\Credit Sale Management System\Credit Sale Management System\obj\x86\Debug\Credit Sale Management System.vbproj.GenerateResource.Cache
+D:\.NET\Credit Sale Management System\Credit Sale Management System\obj\x86\Debug\Credit Sale Management System.exe
+D:\.NET\Credit Sale Management System\Credit Sale Management System\obj\x86\Debug\Credit Sale Management System.xml
+D:\.NET\Credit Sale Management System\Credit Sale Management System\obj\x86\Debug\Credit Sale Management System.pdb
+D:\.NET\Credit Sale Management System\Credit Sale Management System\obj\x86\Debug\Credit_Sale_Management_System.CustomerCreditDetails.resources
+D:\.NET\Credit Sale Management System\Credit Sale Management System\obj\x86\Debug\Credit_Sale_Management_System.SupplierCreditDetails.resources
+D:\.NET\Credit Sale Management System\Credit Sale Management System\obj\x86\Debug\Credit_Sale_Management_System.SupplierDetails.resources
+D:\.NET\Credit Sale Management System\Credit Sale Management System\bin\Debug\Credit Sale Management System.exe.config
+D:\.NET\Credit Sale Management System\Credit Sale Management System\obj\x86\Debug\Credit_Sale_Management_System.ViewCustomerDetails.resources
+D:\.NET\Credit Sale Management System\Credit Sale Management System\obj\x86\Debug\Credit_Sale_Management_System.ViewSupplierDetails.resources
+D:\.NET\Credit Sale Management System\Credit Sale Management System\obj\x86\Debug\Credit_Sale_Management_System.ViewCustomerCreditDetails.resources
+D:\.NET\Credit Sale Management System\Credit Sale Management System\obj\x86\Debug\Credit_Sale_Management_System.ViewSupplierCreditDetails.resources

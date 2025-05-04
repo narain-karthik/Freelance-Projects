@@ -1,0 +1,232 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+RestaurantManagementSystem
+</name>
+</assembly>
+<members>
+<member name="T:Restaurant_Management_System.RestaurantDataSet3.TableDetailsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Restaurant_Management_System.RestaurantDataSet3.TableDetailsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Restaurant_Management_System.RestaurantDataSet3.TableDetailsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Restaurant_Management_System.RestaurantDataSet3">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Restaurant_Management_System.RestaurantDataSet3TableAdapters.TableDetailsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Restaurant_Management_System.RestaurantDataSet3TableAdapters.TableAdapterManager.UpdateUpdatedRows(Restaurant_Management_System.RestaurantDataSet3,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Restaurant_Management_System.RestaurantDataSet3TableAdapters.TableAdapterManager.UpdateInsertedRows(Restaurant_Management_System.RestaurantDataSet3,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Restaurant_Management_System.RestaurantDataSet3TableAdapters.TableAdapterManager.UpdateDeletedRows(Restaurant_Management_System.RestaurantDataSet3,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Restaurant_Management_System.RestaurantDataSet3TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Restaurant_Management_System.RestaurantDataSet3TableAdapters.TableAdapterManager.UpdateAll(Restaurant_Management_System.RestaurantDataSet3)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Restaurant_Management_System.RestaurantDataSet3TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Restaurant_Management_System.RestaurantDataSet3TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Restaurant_Management_System.RestaurantDataSet3TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Restaurant_Management_System.RestaurantDataSet2.OrdersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Restaurant_Management_System.RestaurantDataSet2.OrdersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Restaurant_Management_System.RestaurantDataSet2.OrdersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Restaurant_Management_System.RestaurantDataSet2">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Restaurant_Management_System.RestaurantDataSet2TableAdapters.OrdersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Restaurant_Management_System.RestaurantDataSet2TableAdapters.TableAdapterManager.UpdateUpdatedRows(Restaurant_Management_System.RestaurantDataSet2,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Restaurant_Management_System.RestaurantDataSet2TableAdapters.TableAdapterManager.UpdateInsertedRows(Restaurant_Management_System.RestaurantDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Restaurant_Management_System.RestaurantDataSet2TableAdapters.TableAdapterManager.UpdateDeletedRows(Restaurant_Management_System.RestaurantDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Restaurant_Management_System.RestaurantDataSet2TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Restaurant_Management_System.RestaurantDataSet2TableAdapters.TableAdapterManager.UpdateAll(Restaurant_Management_System.RestaurantDataSet2)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Restaurant_Management_System.RestaurantDataSet2TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Restaurant_Management_System.RestaurantDataSet2TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Restaurant_Management_System.RestaurantDataSet2TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Restaurant_Management_System.RestaurantDataSet1.MenuItemsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Restaurant_Management_System.RestaurantDataSet1.MenuItemsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Restaurant_Management_System.RestaurantDataSet1.MenuItemsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Restaurant_Management_System.RestaurantDataSet1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Restaurant_Management_System.RestaurantDataSet1TableAdapters.MenuItemsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Restaurant_Management_System.RestaurantDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(Restaurant_Management_System.RestaurantDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Restaurant_Management_System.RestaurantDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(Restaurant_Management_System.RestaurantDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Restaurant_Management_System.RestaurantDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(Restaurant_Management_System.RestaurantDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Restaurant_Management_System.RestaurantDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Restaurant_Management_System.RestaurantDataSet1TableAdapters.TableAdapterManager.UpdateAll(Restaurant_Management_System.RestaurantDataSet1)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Restaurant_Management_System.RestaurantDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Restaurant_Management_System.RestaurantDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Restaurant_Management_System.RestaurantDataSet1TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Restaurant_Management_System.RestaurantDataSet.EmployeeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Restaurant_Management_System.RestaurantDataSet.EmployeeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Restaurant_Management_System.RestaurantDataSet.EmployeeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Restaurant_Management_System.RestaurantDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Restaurant_Management_System.RestaurantDataSetTableAdapters.EmployeeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Restaurant_Management_System.RestaurantDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Restaurant_Management_System.RestaurantDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Restaurant_Management_System.RestaurantDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Restaurant_Management_System.RestaurantDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Restaurant_Management_System.RestaurantDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Restaurant_Management_System.RestaurantDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Restaurant_Management_System.RestaurantDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Restaurant_Management_System.RestaurantDataSetTableAdapters.TableAdapterManager.UpdateAll(Restaurant_Management_System.RestaurantDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Restaurant_Management_System.RestaurantDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Restaurant_Management_System.RestaurantDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Restaurant_Management_System.RestaurantDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="P:Restaurant_Management_System.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Restaurant_Management_System.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Restaurant_Management_System.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

@@ -1,0 +1,18 @@
+D:\.NET\Product Management System\Product Management System\bin\Debug\Product Management System.exe
+D:\.NET\Product Management System\Product Management System\bin\Debug\Product Management System.pdb
+D:\.NET\Product Management System\Product Management System\bin\Debug\Product Management System.xml
+D:\.NET\Product Management System\Product Management System\obj\x86\Debug\Product_Management_System.AdminDashboard.resources
+D:\.NET\Product Management System\Product Management System\obj\x86\Debug\Product_Management_System.Form1.resources
+D:\.NET\Product Management System\Product Management System\obj\x86\Debug\Product_Management_System.Resources.resources
+D:\.NET\Product Management System\Product Management System\obj\x86\Debug\Product Management System.vbproj.GenerateResource.Cache
+D:\.NET\Product Management System\Product Management System\obj\x86\Debug\Product Management System.exe
+D:\.NET\Product Management System\Product Management System\obj\x86\Debug\Product Management System.xml
+D:\.NET\Product Management System\Product Management System\obj\x86\Debug\Product Management System.pdb
+D:\.NET\Product Management System\Product Management System\obj\x86\Debug\Product_Management_System.CustomerDetails.resources
+D:\.NET\Product Management System\Product Management System\obj\x86\Debug\Product_Management_System.PurchaseDetails.resources
+D:\.NET\Product Management System\Product Management System\obj\x86\Debug\Product_Management_System.SalesDetails.resources
+D:\.NET\Product Management System\Product Management System\obj\x86\Debug\Product_Management_System.StockDetails.resources
+D:\.NET\Product Management System\Product Management System\obj\x86\Debug\Product_Management_System.ViewPurchaseDetails.resources
+D:\.NET\Product Management System\Product Management System\obj\x86\Debug\Product_Management_System.ViewCustomerDetails.resources
+D:\.NET\Product Management System\Product Management System\obj\x86\Debug\Product_Management_System.ViewSalesDetails.resources
+D:\.NET\Product Management System\Product Management System\obj\x86\Debug\Product_Management_System.ViewStockDetails.resources

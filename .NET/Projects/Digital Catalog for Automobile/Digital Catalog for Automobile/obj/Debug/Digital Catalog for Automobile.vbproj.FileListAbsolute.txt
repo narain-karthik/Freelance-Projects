@@ -1,0 +1,8 @@
+D:\.NET\Digital Catalog for Automobile\Digital Catalog for Automobile\bin\Digital Catalog for Automobile.dll
+D:\.NET\Digital Catalog for Automobile\Digital Catalog for Automobile\bin\Digital Catalog for Automobile.pdb
+D:\.NET\Digital Catalog for Automobile\Digital Catalog for Automobile\bin\Digital Catalog for Automobile.xml
+D:\.NET\Digital Catalog for Automobile\Digital Catalog for Automobile\obj\Debug\Digital_Catalog_for_Automobile.Resources.resources
+D:\.NET\Digital Catalog for Automobile\Digital Catalog for Automobile\obj\Debug\Digital Catalog for Automobile.vbproj.GenerateResource.Cache
+D:\.NET\Digital Catalog for Automobile\Digital Catalog for Automobile\obj\Debug\Digital Catalog for Automobile.dll
+D:\.NET\Digital Catalog for Automobile\Digital Catalog for Automobile\obj\Debug\Digital Catalog for Automobile.xml
+D:\.NET\Digital Catalog for Automobile\Digital Catalog for Automobile\obj\Debug\Digital Catalog for Automobile.pdb

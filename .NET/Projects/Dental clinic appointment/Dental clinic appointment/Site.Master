@@ -1,0 +1,145 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site.master.vb" Inherits="Dental_clinic_appointment.Site" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Dental Clinic</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa; /* Light background for the page */
+        }
+
+        .header {
+            background-color: #f0f0f0; /* Light gray background for the header */
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add shadow for depth */
+        }
+
+        .header h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .header .logo {
+            max-height: 60px;
+        }
+
+        .nav {
+            background-color: #333; /* Dark background for navigation */
+            color: white;
+            padding: 10px 0;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            margin: 0 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav a:hover {
+            background-color: #555; /* Darker shade when hovering over links */
+        }
+
+        /* Style for the "Make an Appointment" button */
+        .appointment-btn {
+            background-color: #28a745; /* Green background */
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .appointment-btn:hover {
+            background-color: #218838; /* Darker green on hover */
+        }
+
+        /* Mobile responsiveness */
+        @media screen and (max-width: 768px) {
+            .nav-content {
+                flex-direction: column;
+            }
+
+            .nav a {
+                padding: 12px;
+                text-align: center;
+                margin: 5px 0;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+
+        /* Content area styles */
+        .content {
+            padding: 20px;
+            max-width: 1080px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header class="header">
+                <div class="header-content">
+                    <img src="dental.png" alt="Dental Clinic" class="logo">
+                    <h1>Dental Clinic</h1>
+                </div>
+            </header>
+
+            <nav class="nav">
+                <div class="nav-content">
+                    <a href="Home.aspx">HOME</a>
+                    <a href="About.aspx">ABOUT US</a>
+                    <a href="Service.aspx">SERVICES</a>
+                    <a href="Contact.aspx">CONTACT US</a>
+                    <a href="login.aspx" class="appointment-btn">MAKE AN APPOINTMENT</a> <!-- Button style applied here -->
+                </div>
+            </nav>
+
+            <!-- Main Content Area -->
+            <div class="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+           
+        </div>
+    </form>
+</body>
+</html>

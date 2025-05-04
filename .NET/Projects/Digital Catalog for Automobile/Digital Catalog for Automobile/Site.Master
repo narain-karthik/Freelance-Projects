@@ -1,0 +1,144 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site.master.vb" Inherits="Digital_Catalog_for_Automobile.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Digital Catalog for Automobile Store</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        /* Base styling for body */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #ffffff; /* White background */
+            color: #333; /* Dark gray for text for good contrast */
+        }
+
+        /* Styling for the navigation bar */
+        nav {
+            background-color: #d3d3d3; /* Light gray */
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Center the navigation links */
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Style each navigation item */
+        nav li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        /* Style the links */
+        nav a {
+            text-decoration: none;
+            color: #663399; /* Purple text */
+            font-weight: 500;
+            padding: 12px 18px;
+            border-radius: 8px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Hover effect for links */
+        nav a:hover {
+            background-color: #663399; /* Changed from bright yellow #ffd700 to purple */
+            color: #fff; /* White text when hovered */
+        }
+
+        /* Logo styling */
+        .logo {
+            float: left;
+            margin-right: 20px;
+        }
+
+        .logo img {
+            max-height: 60px;
+            vertical-align: middle;
+        }
+
+        /* Responsive design adjustments */
+        @media (max-width: 768px) {
+            nav ul {
+                text-align: left; /* Stack items vertically on smaller screens */
+            }
+
+            nav li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .logo {
+                float: none;
+                text-align: center;
+                margin: 0 auto 10px;
+            }
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #d3d3d3; /* Light gray */
+            color: #333; /* Dark text color */
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #663399; /* Purple text */
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: #663399; /* Changed from bright yellow #ffd700 to purple */
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <!-- Navigation Bar -->
+            <nav>
+                <div class="logo">
+                    <a href="/"> 
+                        <img src="Logo.png" alt="Auto Haven Logo"/>
+                    </a>  
+                </div>
+                <ul>
+                    <li><a href="Home.aspx">Home</a></li>
+                    <li><a href="Catalog.aspx">Vehicle Catalog</a></li>
+                    <li><a href="About.aspx">About Us</a></li>
+                    <li><a href="Cart.aspx">Cart</a></li>
+                    <li><a href="Contact.aspx">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Content Placeholder -->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <center><p>© 2025 Digital Catalog for Automobile Store. All Rights Reserved. | <a href="Privacy.aspx">Privacy Policy</a></p></center>    
+        </footer>
+    </form>
+</body>
+</html>

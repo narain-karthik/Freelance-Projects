@@ -1,0 +1,44 @@
+﻿#header {
+    background-color: #333;
+    padding: 10px 20px;
+    overflow: hidden; /* Ensure proper layout */
+}
+
+#logo {
+    float: left;
+    height: 50px; /* Adjust as needed */
+    margin-right: 20px;
+}
+
+#navMenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+#navMenu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+#navMenu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#navMenu li a:hover {
+    color: #FFD700;
+}
+#footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+#content {
+    padding: 20px;
+    min-height: 400px;
+}

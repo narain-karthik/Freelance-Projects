@@ -1,0 +1,19 @@
+D:\.NET\Fruits Shop Management System\Fruits Shop Management System\bin\Debug\Fruits Shop Management System.exe
+D:\.NET\Fruits Shop Management System\Fruits Shop Management System\bin\Debug\Fruits Shop Management System.pdb
+D:\.NET\Fruits Shop Management System\Fruits Shop Management System\bin\Debug\Fruits Shop Management System.xml
+D:\.NET\Fruits Shop Management System\Fruits Shop Management System\obj\x86\Debug\Fruits_Shop_Management_System.Resources.resources
+D:\.NET\Fruits Shop Management System\Fruits Shop Management System\obj\x86\Debug\Fruits Shop Management System.vbproj.GenerateResource.Cache
+D:\.NET\Fruits Shop Management System\Fruits Shop Management System\obj\x86\Debug\Fruits Shop Management System.exe
+D:\.NET\Fruits Shop Management System\Fruits Shop Management System\obj\x86\Debug\Fruits Shop Management System.xml
+D:\.NET\Fruits Shop Management System\Fruits Shop Management System\obj\x86\Debug\Fruits Shop Management System.pdb
+D:\.NET\Fruits Shop Management System\Fruits Shop Management System\obj\x86\Debug\Fruits_Shop_Management_System.CustomerDetails.resources
+D:\.NET\Fruits Shop Management System\Fruits Shop Management System\obj\x86\Debug\Fruits_Shop_Management_System.DashboardForm.resources
+D:\.NET\Fruits Shop Management System\Fruits Shop Management System\obj\x86\Debug\Fruits_Shop_Management_System.ProductDetails.resources
+D:\.NET\Fruits Shop Management System\Fruits Shop Management System\obj\x86\Debug\Fruits_Shop_Management_System.PurchaseDetails.resources
+D:\.NET\Fruits Shop Management System\Fruits Shop Management System\obj\x86\Debug\Fruits_Shop_Management_System.SalesDetails.resources
+D:\.NET\Fruits Shop Management System\Fruits Shop Management System\obj\x86\Debug\Fruits_Shop_Management_System.StockDetails.resources
+D:\.NET\Fruits Shop Management System\Fruits Shop Management System\obj\x86\Debug\Fruits_Shop_Management_System.ViewCustomerDetails.resources
+D:\.NET\Fruits Shop Management System\Fruits Shop Management System\obj\x86\Debug\Fruits_Shop_Management_System.ViewProductDetails.resources
+D:\.NET\Fruits Shop Management System\Fruits Shop Management System\obj\x86\Debug\Fruits_Shop_Management_System.ViewPurchaseDetails.resources
+D:\.NET\Fruits Shop Management System\Fruits Shop Management System\obj\x86\Debug\Fruits_Shop_Management_System.ViewSalesDetails.resources
+D:\.NET\Fruits Shop Management System\Fruits Shop Management System\obj\x86\Debug\Fruits_Shop_Management_System.ViewStockDetails.resources

@@ -1,0 +1,8 @@
+D:\.NET\Logistic Management System\Logistic Management System\bin\Logistic Management System.dll
+D:\.NET\Logistic Management System\Logistic Management System\bin\Logistic Management System.pdb
+D:\.NET\Logistic Management System\Logistic Management System\bin\Logistic Management System.xml
+D:\.NET\Logistic Management System\Logistic Management System\obj\Debug\Logistic_Management_System.Resources.resources
+D:\.NET\Logistic Management System\Logistic Management System\obj\Debug\Logistic Management System.vbproj.GenerateResource.Cache
+D:\.NET\Logistic Management System\Logistic Management System\obj\Debug\Logistic Management System.dll
+D:\.NET\Logistic Management System\Logistic Management System\obj\Debug\Logistic Management System.xml
+D:\.NET\Logistic Management System\Logistic Management System\obj\Debug\Logistic Management System.pdb

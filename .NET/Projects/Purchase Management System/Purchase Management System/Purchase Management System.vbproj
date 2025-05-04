@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{919AEEF2-4D24-400F-8B1B-3437AFD45A90}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Purchase_Management_System.My.MyApplication</StartupObject>
+    <RootNamespace>Purchase_Management_System</RootNamespace>
+    <AssemblyName>Purchase Management System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Purchase Management System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Purchase Management System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DashboardForm.Designer.vb">
+      <DependentUpon>DashboardForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmplyoeeDetails.Designer.vb">
+      <DependentUpon>EmplyoeeDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmplyoeeDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Products.Designer.vb">
+      <DependentUpon>Products.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Products.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseManagementDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PurchaseManagementDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseManagementDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PurchaseManagementDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseManagementDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PurchaseManagementDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseManagementDataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PurchaseManagementDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseManagementDataSet4.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PurchaseManagementDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrders.Designer.vb">
+      <DependentUpon>PurchaseOrders.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrders.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock.Designer.vb">
+      <DependentUpon>Stock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Stock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suppliers.Designer.vb">
+      <DependentUpon>Suppliers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Suppliers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAllProducts.Designer.vb">
+      <DependentUpon>ViewAllProducts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAllProducts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAllPurchaseOrders.Designer.vb">
+      <DependentUpon>ViewAllPurchaseOrders.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAllPurchaseOrders.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAllSuppliers.Designer.vb">
+      <DependentUpon>ViewAllSuppliers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAllSuppliers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewEmployeeDetails.Designer.vb">
+      <DependentUpon>ViewEmployeeDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewEmployeeDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewStock.Designer.vb">
+      <DependentUpon>ViewStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DashboardForm.resx">
+      <DependentUpon>DashboardForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmplyoeeDetails.resx">
+      <DependentUpon>EmplyoeeDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products.resx">
+      <DependentUpon>Products.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseOrders.resx">
+      <DependentUpon>PurchaseOrders.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock.resx">
+      <DependentUpon>Stock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suppliers.resx">
+      <DependentUpon>Suppliers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAllProducts.resx">
+      <DependentUpon>ViewAllProducts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAllPurchaseOrders.resx">
+      <DependentUpon>ViewAllPurchaseOrders.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAllSuppliers.resx">
+      <DependentUpon>ViewAllSuppliers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewEmployeeDetails.resx">
+      <DependentUpon>ViewEmployeeDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewStock.resx">
+      <DependentUpon>ViewStock.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="PurchaseManagementDataSet.xsc">
+      <DependentUpon>PurchaseManagementDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PurchaseManagementDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PurchaseManagementDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PurchaseManagementDataSet.xss">
+      <DependentUpon>PurchaseManagementDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PurchaseManagementDataSet1.xsc">
+      <DependentUpon>PurchaseManagementDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PurchaseManagementDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PurchaseManagementDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PurchaseManagementDataSet1.xss">
+      <DependentUpon>PurchaseManagementDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PurchaseManagementDataSet2.xsc">
+      <DependentUpon>PurchaseManagementDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="PurchaseManagementDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PurchaseManagementDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PurchaseManagementDataSet2.xss">
+      <DependentUpon>PurchaseManagementDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="PurchaseManagementDataSet3.xsc">
+      <DependentUpon>PurchaseManagementDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="PurchaseManagementDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PurchaseManagementDataSet3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PurchaseManagementDataSet3.xss">
+      <DependentUpon>PurchaseManagementDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="PurchaseManagementDataSet4.xsc">
+      <DependentUpon>PurchaseManagementDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="PurchaseManagementDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PurchaseManagementDataSet4.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PurchaseManagementDataSet4.xss">
+      <DependentUpon>PurchaseManagementDataSet4.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

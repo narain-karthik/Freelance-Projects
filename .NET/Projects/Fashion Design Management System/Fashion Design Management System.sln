@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Fashion Design Management System", "Fashion Design Management System\Fashion Design Management System.vbproj", "{FAD19FD6-D9D8-4B5D-AF86-B9463D917DBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAD19FD6-D9D8-4B5D-AF86-B9463D917DBF}.Debug|x86.ActiveCfg = Debug|x86
+		{FAD19FD6-D9D8-4B5D-AF86-B9463D917DBF}.Debug|x86.Build.0 = Debug|x86
+		{FAD19FD6-D9D8-4B5D-AF86-B9463D917DBF}.Release|x86.ActiveCfg = Release|x86
+		{FAD19FD6-D9D8-4B5D-AF86-B9463D917DBF}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

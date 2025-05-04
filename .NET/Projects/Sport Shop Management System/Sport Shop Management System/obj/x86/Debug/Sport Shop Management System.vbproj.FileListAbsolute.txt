@@ -1,0 +1,17 @@
+D:\.NET\Sport Shop Management System\Sport Shop Management System\bin\Debug\Sport Shop Management System.exe
+D:\.NET\Sport Shop Management System\Sport Shop Management System\bin\Debug\Sport Shop Management System.pdb
+D:\.NET\Sport Shop Management System\Sport Shop Management System\bin\Debug\Sport Shop Management System.xml
+D:\.NET\Sport Shop Management System\Sport Shop Management System\obj\x86\Debug\Sport_Shop_Management_System.AdminHome.resources
+D:\.NET\Sport Shop Management System\Sport Shop Management System\obj\x86\Debug\Sport_Shop_Management_System.CustomerDetails.resources
+D:\.NET\Sport Shop Management System\Sport Shop Management System\obj\x86\Debug\Sport_Shop_Management_System.SalesDetails.resources
+D:\.NET\Sport Shop Management System\Sport Shop Management System\obj\x86\Debug\Sport_Shop_Management_System.EmployeeDetails.resources
+D:\.NET\Sport Shop Management System\Sport Shop Management System\obj\x86\Debug\Sport_Shop_Management_System.Form1.resources
+D:\.NET\Sport Shop Management System\Sport Shop Management System\obj\x86\Debug\Sport_Shop_Management_System.Resources.resources
+D:\.NET\Sport Shop Management System\Sport Shop Management System\obj\x86\Debug\Sport Shop Management System.vbproj.GenerateResource.Cache
+D:\.NET\Sport Shop Management System\Sport Shop Management System\obj\x86\Debug\Sport Shop Management System.exe
+D:\.NET\Sport Shop Management System\Sport Shop Management System\obj\x86\Debug\Sport Shop Management System.xml
+D:\.NET\Sport Shop Management System\Sport Shop Management System\obj\x86\Debug\Sport Shop Management System.pdb
+D:\.NET\Sport Shop Management System\Sport Shop Management System\bin\Debug\Sport Shop Management System.exe.config
+D:\.NET\Sport Shop Management System\Sport Shop Management System\obj\x86\Debug\Sport_Shop_Management_System.ViewCustomerDetails.resources
+D:\.NET\Sport Shop Management System\Sport Shop Management System\obj\x86\Debug\Sport_Shop_Management_System.ViewEmployeeDetails.resources
+D:\.NET\Sport Shop Management System\Sport Shop Management System\obj\x86\Debug\Sport_Shop_Management_System.ViewSalesDetails.resources

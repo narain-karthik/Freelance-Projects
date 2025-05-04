@@ -1,0 +1,336 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AttendanceApplication
+</name>
+</assembly>
+<members>
+<member name="P:Attendance_Application.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Attendance_Application.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Attendance_Application.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet.StaffDetailsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet.StaffDetailsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet.StaffDetailsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSetTableAdapters.StaffDetailsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Attendance_Application.AttendanceDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Attendance_Application.AttendanceDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Attendance_Application.AttendanceDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Attendance_Application.AttendanceDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Attendance_Application.AttendanceDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Attendance_Application.AttendanceDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Attendance_Application.AttendanceDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Attendance_Application.AttendanceDataSetTableAdapters.TableAdapterManager.UpdateAll(Attendance_Application.AttendanceDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet2.StaffDetailsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet2.StaffDetailsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet2.StaffDetailsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet2">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet2TableAdapters.StaffDetailsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Attendance_Application.AttendanceDataSet2TableAdapters.TableAdapterManager.UpdateUpdatedRows(Attendance_Application.AttendanceDataSet2,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Attendance_Application.AttendanceDataSet2TableAdapters.TableAdapterManager.UpdateInsertedRows(Attendance_Application.AttendanceDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Attendance_Application.AttendanceDataSet2TableAdapters.TableAdapterManager.UpdateDeletedRows(Attendance_Application.AttendanceDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Attendance_Application.AttendanceDataSet2TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Attendance_Application.AttendanceDataSet2TableAdapters.TableAdapterManager.UpdateAll(Attendance_Application.AttendanceDataSet2)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet2TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet2TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet2TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet5.AttendanceRecordsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet5.AttendanceRecordsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet5.AttendanceRecordsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet5">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet5TableAdapters.AttendanceRecordsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Attendance_Application.AttendanceDataSet5TableAdapters.TableAdapterManager.UpdateUpdatedRows(Attendance_Application.AttendanceDataSet5,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Attendance_Application.AttendanceDataSet5TableAdapters.TableAdapterManager.UpdateInsertedRows(Attendance_Application.AttendanceDataSet5,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Attendance_Application.AttendanceDataSet5TableAdapters.TableAdapterManager.UpdateDeletedRows(Attendance_Application.AttendanceDataSet5,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Attendance_Application.AttendanceDataSet5TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Attendance_Application.AttendanceDataSet5TableAdapters.TableAdapterManager.UpdateAll(Attendance_Application.AttendanceDataSet5)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet5TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet5TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet5TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet1.StaffDetailsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet1.StaffDetailsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet1.StaffDetailsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet1TableAdapters.StaffDetailsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Attendance_Application.AttendanceDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(Attendance_Application.AttendanceDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Attendance_Application.AttendanceDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(Attendance_Application.AttendanceDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Attendance_Application.AttendanceDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(Attendance_Application.AttendanceDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Attendance_Application.AttendanceDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Attendance_Application.AttendanceDataSet1TableAdapters.TableAdapterManager.UpdateAll(Attendance_Application.AttendanceDataSet1)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet1TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet4.AttendanceRecordsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet4.AttendanceRecordsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet4.AttendanceRecordsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet4">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet4TableAdapters.AttendanceRecordsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Attendance_Application.AttendanceDataSet4TableAdapters.TableAdapterManager.UpdateUpdatedRows(Attendance_Application.AttendanceDataSet4,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Attendance_Application.AttendanceDataSet4TableAdapters.TableAdapterManager.UpdateInsertedRows(Attendance_Application.AttendanceDataSet4,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Attendance_Application.AttendanceDataSet4TableAdapters.TableAdapterManager.UpdateDeletedRows(Attendance_Application.AttendanceDataSet4,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Attendance_Application.AttendanceDataSet4TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Attendance_Application.AttendanceDataSet4TableAdapters.TableAdapterManager.UpdateAll(Attendance_Application.AttendanceDataSet4)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet4TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet4TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet4TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet3.StaffDetailsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet3.StaffDetailsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet3.StaffDetailsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet3">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet3TableAdapters.StaffDetailsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Attendance_Application.AttendanceDataSet3TableAdapters.TableAdapterManager.UpdateUpdatedRows(Attendance_Application.AttendanceDataSet3,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Attendance_Application.AttendanceDataSet3TableAdapters.TableAdapterManager.UpdateInsertedRows(Attendance_Application.AttendanceDataSet3,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Attendance_Application.AttendanceDataSet3TableAdapters.TableAdapterManager.UpdateDeletedRows(Attendance_Application.AttendanceDataSet3,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Attendance_Application.AttendanceDataSet3TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Attendance_Application.AttendanceDataSet3TableAdapters.TableAdapterManager.UpdateAll(Attendance_Application.AttendanceDataSet3)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet3TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet3TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Attendance_Application.AttendanceDataSet3TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+</members>
+</doc>

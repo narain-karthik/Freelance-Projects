@@ -1,0 +1,284 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+PurchaseManagementSystem
+</name>
+</assembly>
+<members>
+<member name="T:Purchase_Management_System.PurchaseManagementDataSet4.EmployeesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSet4.EmployeesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSet4.EmployeesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSet4">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSet4TableAdapters.EmployeesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Purchase_Management_System.PurchaseManagementDataSet4TableAdapters.TableAdapterManager.UpdateUpdatedRows(Purchase_Management_System.PurchaseManagementDataSet4,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Purchase_Management_System.PurchaseManagementDataSet4TableAdapters.TableAdapterManager.UpdateInsertedRows(Purchase_Management_System.PurchaseManagementDataSet4,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Purchase_Management_System.PurchaseManagementDataSet4TableAdapters.TableAdapterManager.UpdateDeletedRows(Purchase_Management_System.PurchaseManagementDataSet4,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Purchase_Management_System.PurchaseManagementDataSet4TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Purchase_Management_System.PurchaseManagementDataSet4TableAdapters.TableAdapterManager.UpdateAll(Purchase_Management_System.PurchaseManagementDataSet4)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSet4TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSet4TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSet4TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSet3.EmployeesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSet3.EmployeesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSet3.EmployeesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSet3">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSet3TableAdapters.EmployeesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Purchase_Management_System.PurchaseManagementDataSet3TableAdapters.TableAdapterManager.UpdateUpdatedRows(Purchase_Management_System.PurchaseManagementDataSet3,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Purchase_Management_System.PurchaseManagementDataSet3TableAdapters.TableAdapterManager.UpdateInsertedRows(Purchase_Management_System.PurchaseManagementDataSet3,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Purchase_Management_System.PurchaseManagementDataSet3TableAdapters.TableAdapterManager.UpdateDeletedRows(Purchase_Management_System.PurchaseManagementDataSet3,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Purchase_Management_System.PurchaseManagementDataSet3TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Purchase_Management_System.PurchaseManagementDataSet3TableAdapters.TableAdapterManager.UpdateAll(Purchase_Management_System.PurchaseManagementDataSet3)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSet3TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSet3TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSet3TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSet.PurchaseOrdersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSet.PurchaseOrdersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSet.PurchaseOrdersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSetTableAdapters.PurchaseOrdersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Purchase_Management_System.PurchaseManagementDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Purchase_Management_System.PurchaseManagementDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Purchase_Management_System.PurchaseManagementDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Purchase_Management_System.PurchaseManagementDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Purchase_Management_System.PurchaseManagementDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Purchase_Management_System.PurchaseManagementDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Purchase_Management_System.PurchaseManagementDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Purchase_Management_System.PurchaseManagementDataSetTableAdapters.TableAdapterManager.UpdateAll(Purchase_Management_System.PurchaseManagementDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSet2.StockTransactionsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSet2.StockTransactionsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSet2.StockTransactionsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSet2">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSet2TableAdapters.StockTransactionsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Purchase_Management_System.PurchaseManagementDataSet2TableAdapters.TableAdapterManager.UpdateUpdatedRows(Purchase_Management_System.PurchaseManagementDataSet2,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Purchase_Management_System.PurchaseManagementDataSet2TableAdapters.TableAdapterManager.UpdateInsertedRows(Purchase_Management_System.PurchaseManagementDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Purchase_Management_System.PurchaseManagementDataSet2TableAdapters.TableAdapterManager.UpdateDeletedRows(Purchase_Management_System.PurchaseManagementDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Purchase_Management_System.PurchaseManagementDataSet2TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Purchase_Management_System.PurchaseManagementDataSet2TableAdapters.TableAdapterManager.UpdateAll(Purchase_Management_System.PurchaseManagementDataSet2)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSet2TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSet2TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSet2TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSet1.PurchaseOrdersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSet1.PurchaseOrdersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSet1.PurchaseOrdersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSet1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSet1TableAdapters.PurchaseOrdersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Purchase_Management_System.PurchaseManagementDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(Purchase_Management_System.PurchaseManagementDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Purchase_Management_System.PurchaseManagementDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(Purchase_Management_System.PurchaseManagementDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Purchase_Management_System.PurchaseManagementDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(Purchase_Management_System.PurchaseManagementDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Purchase_Management_System.PurchaseManagementDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Purchase_Management_System.PurchaseManagementDataSet1TableAdapters.TableAdapterManager.UpdateAll(Purchase_Management_System.PurchaseManagementDataSet1)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Purchase_Management_System.PurchaseManagementDataSet1TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="P:Purchase_Management_System.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Purchase_Management_System.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Purchase_Management_System.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

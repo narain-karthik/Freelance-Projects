@@ -1,0 +1,8 @@
+D:\.NET\Dental clinic appointment\Dental clinic appointment\bin\Dental clinic appointment.dll
+D:\.NET\Dental clinic appointment\Dental clinic appointment\bin\Dental clinic appointment.pdb
+D:\.NET\Dental clinic appointment\Dental clinic appointment\bin\Dental clinic appointment.xml
+D:\.NET\Dental clinic appointment\Dental clinic appointment\obj\Debug\Dental_clinic_appointment.Resources.resources
+D:\.NET\Dental clinic appointment\Dental clinic appointment\obj\Debug\Dental clinic appointment.vbproj.GenerateResource.Cache
+D:\.NET\Dental clinic appointment\Dental clinic appointment\obj\Debug\Dental clinic appointment.dll
+D:\.NET\Dental clinic appointment\Dental clinic appointment\obj\Debug\Dental clinic appointment.xml
+D:\.NET\Dental clinic appointment\Dental clinic appointment\obj\Debug\Dental clinic appointment.pdb

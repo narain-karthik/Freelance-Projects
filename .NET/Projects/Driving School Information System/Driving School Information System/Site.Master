@@ -1,0 +1,39 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site.master.vb" Inherits="Driving_School_Information_System.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="Head1" runat="server">
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="Styles/Site.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <!-- Navigation Menu -->
+        <div id="header">
+            <img src="Image/logo.jpg"alt="Driving School Logo" id="logo" />
+            <ul id="navMenu">
+                <li><a href="Home.aspx">Home</a></li>
+                <li><a href="Services.aspx">Service</a></li>
+                <li><a href="Contact.aspx">Contact</a></li>
+                <li><a href="About.aspx">About Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div id="content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+
+        <!-- Footer -->
+        <div id="footer">
+            <p>&copy; 2025 Your Website. All rights reserved.</p>
+        </div>
+    </form>
+</body>
+
+</html>

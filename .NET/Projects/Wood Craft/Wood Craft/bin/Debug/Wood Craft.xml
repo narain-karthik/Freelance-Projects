@@ -1,0 +1,336 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+WoodCraft
+</name>
+</assembly>
+<members>
+<member name="T:Wood_Craft.WoodDataSet2.ItemDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet2.ItemRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet2.ItemRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet2">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet2TableAdapters.ItemTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Wood_Craft.WoodDataSet2TableAdapters.TableAdapterManager.UpdateUpdatedRows(Wood_Craft.WoodDataSet2,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Wood_Craft.WoodDataSet2TableAdapters.TableAdapterManager.UpdateInsertedRows(Wood_Craft.WoodDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Wood_Craft.WoodDataSet2TableAdapters.TableAdapterManager.UpdateDeletedRows(Wood_Craft.WoodDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Wood_Craft.WoodDataSet2TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Wood_Craft.WoodDataSet2TableAdapters.TableAdapterManager.UpdateAll(Wood_Craft.WoodDataSet2)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet2TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet2TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet2TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet5.StockDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet5.StockRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet5.StockRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet5">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet5TableAdapters.StockTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Wood_Craft.WoodDataSet5TableAdapters.TableAdapterManager.UpdateUpdatedRows(Wood_Craft.WoodDataSet5,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Wood_Craft.WoodDataSet5TableAdapters.TableAdapterManager.UpdateInsertedRows(Wood_Craft.WoodDataSet5,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Wood_Craft.WoodDataSet5TableAdapters.TableAdapterManager.UpdateDeletedRows(Wood_Craft.WoodDataSet5,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Wood_Craft.WoodDataSet5TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Wood_Craft.WoodDataSet5TableAdapters.TableAdapterManager.UpdateAll(Wood_Craft.WoodDataSet5)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet5TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet5TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet5TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet.CustomersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet.CustomersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet.CustomersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSetTableAdapters.CustomersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Wood_Craft.WoodDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Wood_Craft.WoodDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Wood_Craft.WoodDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Wood_Craft.WoodDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Wood_Craft.WoodDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Wood_Craft.WoodDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Wood_Craft.WoodDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Wood_Craft.WoodDataSetTableAdapters.TableAdapterManager.UpdateAll(Wood_Craft.WoodDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet4.SalesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet4.SalesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet4.SalesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet4">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet4TableAdapters.SalesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Wood_Craft.WoodDataSet4TableAdapters.TableAdapterManager.UpdateUpdatedRows(Wood_Craft.WoodDataSet4,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Wood_Craft.WoodDataSet4TableAdapters.TableAdapterManager.UpdateInsertedRows(Wood_Craft.WoodDataSet4,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Wood_Craft.WoodDataSet4TableAdapters.TableAdapterManager.UpdateDeletedRows(Wood_Craft.WoodDataSet4,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Wood_Craft.WoodDataSet4TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Wood_Craft.WoodDataSet4TableAdapters.TableAdapterManager.UpdateAll(Wood_Craft.WoodDataSet4)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet4TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet4TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet4TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="P:Wood_Craft.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Wood_Craft.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Wood_Craft.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet1.SupplierDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet1.SupplierRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet1.SupplierRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet1TableAdapters.SupplierTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Wood_Craft.WoodDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(Wood_Craft.WoodDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Wood_Craft.WoodDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(Wood_Craft.WoodDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Wood_Craft.WoodDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(Wood_Craft.WoodDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Wood_Craft.WoodDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Wood_Craft.WoodDataSet1TableAdapters.TableAdapterManager.UpdateAll(Wood_Craft.WoodDataSet1)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet1TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet3.PurchaseDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet3.PurchaseRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet3.PurchaseRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet3">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet3TableAdapters.PurchaseTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Wood_Craft.WoodDataSet3TableAdapters.TableAdapterManager.UpdateUpdatedRows(Wood_Craft.WoodDataSet3,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Wood_Craft.WoodDataSet3TableAdapters.TableAdapterManager.UpdateInsertedRows(Wood_Craft.WoodDataSet3,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Wood_Craft.WoodDataSet3TableAdapters.TableAdapterManager.UpdateDeletedRows(Wood_Craft.WoodDataSet3,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Wood_Craft.WoodDataSet3TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Wood_Craft.WoodDataSet3TableAdapters.TableAdapterManager.UpdateAll(Wood_Craft.WoodDataSet3)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet3TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet3TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Wood_Craft.WoodDataSet3TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+</members>
+</doc>

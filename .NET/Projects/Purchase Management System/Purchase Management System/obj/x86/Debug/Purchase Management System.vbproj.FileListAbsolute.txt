@@ -1,0 +1,21 @@
+D:\.NET\Purchase Management System\Purchase Management System\bin\Debug\Purchase Management System.exe.config
+D:\.NET\Purchase Management System\Purchase Management System\bin\Debug\Purchase Management System.exe
+D:\.NET\Purchase Management System\Purchase Management System\bin\Debug\Purchase Management System.pdb
+D:\.NET\Purchase Management System\Purchase Management System\bin\Debug\Purchase Management System.xml
+D:\.NET\Purchase Management System\Purchase Management System\obj\x86\Debug\Purchase_Management_System.DashboardForm.resources
+D:\.NET\Purchase Management System\Purchase Management System\obj\x86\Debug\Purchase_Management_System.Form1.resources
+D:\.NET\Purchase Management System\Purchase Management System\obj\x86\Debug\Purchase_Management_System.Resources.resources
+D:\.NET\Purchase Management System\Purchase Management System\obj\x86\Debug\Purchase_Management_System.Products.resources
+D:\.NET\Purchase Management System\Purchase Management System\obj\x86\Debug\Purchase_Management_System.PurchaseOrders.resources
+D:\.NET\Purchase Management System\Purchase Management System\obj\x86\Debug\Purchase_Management_System.Stock.resources
+D:\.NET\Purchase Management System\Purchase Management System\obj\x86\Debug\Purchase_Management_System.Suppliers.resources
+D:\.NET\Purchase Management System\Purchase Management System\obj\x86\Debug\Purchase_Management_System.ViewAllProducts.resources
+D:\.NET\Purchase Management System\Purchase Management System\obj\x86\Debug\Purchase_Management_System.ViewAllPurchaseOrders.resources
+D:\.NET\Purchase Management System\Purchase Management System\obj\x86\Debug\Purchase_Management_System.ViewAllSuppliers.resources
+D:\.NET\Purchase Management System\Purchase Management System\obj\x86\Debug\Purchase_Management_System.ViewStock.resources
+D:\.NET\Purchase Management System\Purchase Management System\obj\x86\Debug\Purchase Management System.vbproj.GenerateResource.Cache
+D:\.NET\Purchase Management System\Purchase Management System\obj\x86\Debug\Purchase Management System.exe
+D:\.NET\Purchase Management System\Purchase Management System\obj\x86\Debug\Purchase Management System.xml
+D:\.NET\Purchase Management System\Purchase Management System\obj\x86\Debug\Purchase Management System.pdb
+D:\.NET\Purchase Management System\Purchase Management System\obj\x86\Debug\Purchase_Management_System.EmployeeForm.resources
+D:\.NET\Purchase Management System\Purchase Management System\obj\x86\Debug\Purchase_Management_System.ViewEmployeeDetails.resources

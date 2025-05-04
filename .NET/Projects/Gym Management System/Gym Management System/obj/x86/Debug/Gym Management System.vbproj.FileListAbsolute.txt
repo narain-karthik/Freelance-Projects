@@ -1,0 +1,18 @@
+D:\.NET\Gym Management System\Gym Management System\bin\Debug\Gym Management System.exe.config
+D:\.NET\Gym Management System\Gym Management System\bin\Debug\Gym Management System.exe
+D:\.NET\Gym Management System\Gym Management System\bin\Debug\Gym Management System.pdb
+D:\.NET\Gym Management System\Gym Management System\bin\Debug\Gym Management System.xml
+D:\.NET\Gym Management System\Gym Management System\obj\x86\Debug\Gym_Management_System.DashboardForm.resources
+D:\.NET\Gym Management System\Gym Management System\obj\x86\Debug\Gym_Management_System.MembersAttendance.resources
+D:\.NET\Gym Management System\Gym Management System\obj\x86\Debug\Gym_Management_System.MembersForm.resources
+D:\.NET\Gym Management System\Gym Management System\obj\x86\Debug\Gym_Management_System.Resources.resources
+D:\.NET\Gym Management System\Gym Management System\obj\x86\Debug\Gym_Management_System.StaffAttendance.resources
+D:\.NET\Gym Management System\Gym Management System\obj\x86\Debug\Gym_Management_System.StaffDetails.resources
+D:\.NET\Gym Management System\Gym Management System\obj\x86\Debug\Gym_Management_System.ViewMembersAttendance.resources
+D:\.NET\Gym Management System\Gym Management System\obj\x86\Debug\Gym_Management_System.ViewMembersDetails.resources
+D:\.NET\Gym Management System\Gym Management System\obj\x86\Debug\Gym_Management_System.ViewStaffAttendance.resources
+D:\.NET\Gym Management System\Gym Management System\obj\x86\Debug\Gym_Management_System.ViewStaffDetails.resources
+D:\.NET\Gym Management System\Gym Management System\obj\x86\Debug\Gym Management System.vbproj.GenerateResource.Cache
+D:\.NET\Gym Management System\Gym Management System\obj\x86\Debug\Gym Management System.exe
+D:\.NET\Gym Management System\Gym Management System\obj\x86\Debug\Gym Management System.xml
+D:\.NET\Gym Management System\Gym Management System\obj\x86\Debug\Gym Management System.pdb

@@ -1,0 +1,8 @@
+D:\.NET\Driving School Information System\Driving School Information System\bin\Driving School Information System.dll
+D:\.NET\Driving School Information System\Driving School Information System\bin\Driving School Information System.pdb
+D:\.NET\Driving School Information System\Driving School Information System\bin\Driving School Information System.xml
+D:\.NET\Driving School Information System\Driving School Information System\obj\Debug\Driving_School_Information_System.Resources.resources
+D:\.NET\Driving School Information System\Driving School Information System\obj\Debug\Driving School Information System.vbproj.GenerateResource.Cache
+D:\.NET\Driving School Information System\Driving School Information System\obj\Debug\Driving School Information System.dll
+D:\.NET\Driving School Information System\Driving School Information System\obj\Debug\Driving School Information System.xml
+D:\.NET\Driving School Information System\Driving School Information System\obj\Debug\Driving School Information System.pdb

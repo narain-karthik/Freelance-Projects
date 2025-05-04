@@ -1,0 +1,8 @@
+D:\.NET\Cake Shop Management\Cake Shop Management\bin\Cake Shop Management.dll
+D:\.NET\Cake Shop Management\Cake Shop Management\bin\Cake Shop Management.pdb
+D:\.NET\Cake Shop Management\Cake Shop Management\bin\Cake Shop Management.xml
+D:\.NET\Cake Shop Management\Cake Shop Management\obj\Debug\Cake_Shop_Management.Resources.resources
+D:\.NET\Cake Shop Management\Cake Shop Management\obj\Debug\Cake Shop Management.vbproj.GenerateResource.Cache
+D:\.NET\Cake Shop Management\Cake Shop Management\obj\Debug\Cake Shop Management.dll
+D:\.NET\Cake Shop Management\Cake Shop Management\obj\Debug\Cake Shop Management.xml
+D:\.NET\Cake Shop Management\Cake Shop Management\obj\Debug\Cake Shop Management.pdb

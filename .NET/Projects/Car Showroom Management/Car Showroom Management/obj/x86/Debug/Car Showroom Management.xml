@@ -1,0 +1,388 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CarShowroomManagement
+</name>
+</assembly>
+<members>
+<member name="T:Car_Showroom_Management.CarDataSet3.StaffDetailsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet3.StaffDetailsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet3.StaffDetailsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet3">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet3TableAdapters.StaffDetailsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Car_Showroom_Management.CarDataSet3TableAdapters.TableAdapterManager.UpdateUpdatedRows(Car_Showroom_Management.CarDataSet3,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Car_Showroom_Management.CarDataSet3TableAdapters.TableAdapterManager.UpdateInsertedRows(Car_Showroom_Management.CarDataSet3,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Car_Showroom_Management.CarDataSet3TableAdapters.TableAdapterManager.UpdateDeletedRows(Car_Showroom_Management.CarDataSet3,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Car_Showroom_Management.CarDataSet3TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Car_Showroom_Management.CarDataSet3TableAdapters.TableAdapterManager.UpdateAll(Car_Showroom_Management.CarDataSet3)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet3TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet3TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet3TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet6.SoldOutCarsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet6.SoldOutCarsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet6.SoldOutCarsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet6">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet6TableAdapters.SoldOutCarsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Car_Showroom_Management.CarDataSet6TableAdapters.TableAdapterManager.UpdateUpdatedRows(Car_Showroom_Management.CarDataSet6,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Car_Showroom_Management.CarDataSet6TableAdapters.TableAdapterManager.UpdateInsertedRows(Car_Showroom_Management.CarDataSet6,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Car_Showroom_Management.CarDataSet6TableAdapters.TableAdapterManager.UpdateDeletedRows(Car_Showroom_Management.CarDataSet6,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Car_Showroom_Management.CarDataSet6TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Car_Showroom_Management.CarDataSet6TableAdapters.TableAdapterManager.UpdateAll(Car_Showroom_Management.CarDataSet6)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet6TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet6TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet6TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="P:Car_Showroom_Management.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Car_Showroom_Management.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Car_Showroom_Management.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet.StaffDetailsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet.StaffDetailsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet.StaffDetailsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSetTableAdapters.StaffDetailsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Car_Showroom_Management.CarDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Car_Showroom_Management.CarDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Car_Showroom_Management.CarDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Car_Showroom_Management.CarDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Car_Showroom_Management.CarDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Car_Showroom_Management.CarDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Car_Showroom_Management.CarDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Car_Showroom_Management.CarDataSetTableAdapters.TableAdapterManager.UpdateAll(Car_Showroom_Management.CarDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet2.StaffDetailsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet2.StaffDetailsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet2.StaffDetailsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet2">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet2TableAdapters.StaffDetailsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Car_Showroom_Management.CarDataSet2TableAdapters.TableAdapterManager.UpdateUpdatedRows(Car_Showroom_Management.CarDataSet2,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Car_Showroom_Management.CarDataSet2TableAdapters.TableAdapterManager.UpdateInsertedRows(Car_Showroom_Management.CarDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Car_Showroom_Management.CarDataSet2TableAdapters.TableAdapterManager.UpdateDeletedRows(Car_Showroom_Management.CarDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Car_Showroom_Management.CarDataSet2TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Car_Showroom_Management.CarDataSet2TableAdapters.TableAdapterManager.UpdateAll(Car_Showroom_Management.CarDataSet2)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet2TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet2TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet2TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet5.SoldOutCarsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet5.SoldOutCarsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet5.SoldOutCarsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet5">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet5TableAdapters.SoldOutCarsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Car_Showroom_Management.CarDataSet5TableAdapters.TableAdapterManager.UpdateUpdatedRows(Car_Showroom_Management.CarDataSet5,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Car_Showroom_Management.CarDataSet5TableAdapters.TableAdapterManager.UpdateInsertedRows(Car_Showroom_Management.CarDataSet5,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Car_Showroom_Management.CarDataSet5TableAdapters.TableAdapterManager.UpdateDeletedRows(Car_Showroom_Management.CarDataSet5,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Car_Showroom_Management.CarDataSet5TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Car_Showroom_Management.CarDataSet5TableAdapters.TableAdapterManager.UpdateAll(Car_Showroom_Management.CarDataSet5)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet5TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet5TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet5TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet4.AttendanceRecordsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet4.AttendanceRecordsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet4.AttendanceRecordsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet4">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet4TableAdapters.AttendanceRecordsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Car_Showroom_Management.CarDataSet4TableAdapters.TableAdapterManager.UpdateUpdatedRows(Car_Showroom_Management.CarDataSet4,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Car_Showroom_Management.CarDataSet4TableAdapters.TableAdapterManager.UpdateInsertedRows(Car_Showroom_Management.CarDataSet4,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Car_Showroom_Management.CarDataSet4TableAdapters.TableAdapterManager.UpdateDeletedRows(Car_Showroom_Management.CarDataSet4,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Car_Showroom_Management.CarDataSet4TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Car_Showroom_Management.CarDataSet4TableAdapters.TableAdapterManager.UpdateAll(Car_Showroom_Management.CarDataSet4)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet4TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet4TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet4TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet1.StaffDetailsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet1.StaffDetailsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet1.StaffDetailsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet1TableAdapters.StaffDetailsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Car_Showroom_Management.CarDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(Car_Showroom_Management.CarDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Car_Showroom_Management.CarDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(Car_Showroom_Management.CarDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Car_Showroom_Management.CarDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(Car_Showroom_Management.CarDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Car_Showroom_Management.CarDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Car_Showroom_Management.CarDataSet1TableAdapters.TableAdapterManager.UpdateAll(Car_Showroom_Management.CarDataSet1)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Car_Showroom_Management.CarDataSet1TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+</members>
+</doc>

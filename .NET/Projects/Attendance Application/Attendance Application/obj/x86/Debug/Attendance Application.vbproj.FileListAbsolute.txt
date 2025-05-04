@@ -1,0 +1,17 @@
+D:\.NET\Attendance Application\Attendance Application\bin\Debug\Attendance Application.exe
+D:\.NET\Attendance Application\Attendance Application\bin\Debug\Attendance Application.pdb
+D:\.NET\Attendance Application\Attendance Application\bin\Debug\Attendance Application.xml
+D:\.NET\Attendance Application\Attendance Application\obj\x86\Debug\Attendance_Application.Resources.resources
+D:\.NET\Attendance Application\Attendance Application\obj\x86\Debug\Attendance Application.vbproj.GenerateResource.Cache
+D:\.NET\Attendance Application\Attendance Application\obj\x86\Debug\Attendance Application.exe
+D:\.NET\Attendance Application\Attendance Application\obj\x86\Debug\Attendance Application.xml
+D:\.NET\Attendance Application\Attendance Application\obj\x86\Debug\Attendance Application.pdb
+D:\.NET\Attendance Application\Attendance Application\obj\x86\Debug\Attendance_Application.Form1.resources
+D:\.NET\Attendance Application\Attendance Application\obj\x86\Debug\Attendance_Application.AdminHomePage.resources
+D:\.NET\Attendance Application\Attendance Application\obj\x86\Debug\Attendance_Application.UserHomePage.resources
+D:\.NET\Attendance Application\Attendance Application\obj\x86\Debug\Attendance_Application.AddStaffDetails.resources
+D:\.NET\Attendance Application\Attendance Application\bin\Debug\Attendance Application.exe.config
+D:\.NET\Attendance Application\Attendance Application\obj\x86\Debug\Attendance_Application.ViewStaffDetails.resources
+D:\.NET\Attendance Application\Attendance Application\obj\x86\Debug\Attendance_Application.MarkAttendance.resources
+D:\.NET\Attendance Application\Attendance Application\obj\x86\Debug\Attendance_Application.AttendanceDetails.resources
+D:\.NET\Attendance Application\Attendance Application\obj\x86\Debug\Attendance_Application.ViewAttendance.resources

@@ -1,0 +1,8 @@
+D:\.NET\Graments\Graments\bin\Graments.dll
+D:\.NET\Graments\Graments\bin\Graments.pdb
+D:\.NET\Graments\Graments\bin\Graments.xml
+D:\.NET\Graments\Graments\obj\Debug\Graments.Resources.resources
+D:\.NET\Graments\Graments\obj\Debug\Graments.vbproj.GenerateResource.Cache
+D:\.NET\Graments\Graments\obj\Debug\Graments.dll
+D:\.NET\Graments\Graments\obj\Debug\Graments.xml
+D:\.NET\Graments\Graments\obj\Debug\Graments.pdb

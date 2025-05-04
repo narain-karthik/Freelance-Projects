@@ -1,0 +1,8 @@
+D:\.NET\Catering Management System\Catering Management System\bin\Catering Management System.dll
+D:\.NET\Catering Management System\Catering Management System\bin\Catering Management System.pdb
+D:\.NET\Catering Management System\Catering Management System\bin\Catering Management System.xml
+D:\.NET\Catering Management System\Catering Management System\obj\Debug\Catering_Management_System.Resources.resources
+D:\.NET\Catering Management System\Catering Management System\obj\Debug\Catering Management System.vbproj.GenerateResource.Cache
+D:\.NET\Catering Management System\Catering Management System\obj\Debug\Catering Management System.dll
+D:\.NET\Catering Management System\Catering Management System\obj\Debug\Catering Management System.xml
+D:\.NET\Catering Management System\Catering Management System\obj\Debug\Catering Management System.pdb

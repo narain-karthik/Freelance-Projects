@@ -1,0 +1,8 @@
+D:\.NET\Dairy Product Management\Dairy Product Management\bin\Dairy Product Management.dll
+D:\.NET\Dairy Product Management\Dairy Product Management\bin\Dairy Product Management.pdb
+D:\.NET\Dairy Product Management\Dairy Product Management\bin\Dairy Product Management.xml
+D:\.NET\Dairy Product Management\Dairy Product Management\obj\Debug\Dairy_Product_Management.Resources.resources
+D:\.NET\Dairy Product Management\Dairy Product Management\obj\Debug\Dairy Product Management.vbproj.GenerateResource.Cache
+D:\.NET\Dairy Product Management\Dairy Product Management\obj\Debug\Dairy Product Management.dll
+D:\.NET\Dairy Product Management\Dairy Product Management\obj\Debug\Dairy Product Management.xml
+D:\.NET\Dairy Product Management\Dairy Product Management\obj\Debug\Dairy Product Management.pdb

@@ -1,0 +1,13 @@
+D:\.NET\Hardware Shop Management System\Hardware Shop Management System\bin\Debug\Hardware Shop Management System.exe
+D:\.NET\Hardware Shop Management System\Hardware Shop Management System\bin\Debug\Hardware Shop Management System.pdb
+D:\.NET\Hardware Shop Management System\Hardware Shop Management System\bin\Debug\Hardware Shop Management System.xml
+D:\.NET\Hardware Shop Management System\Hardware Shop Management System\obj\x86\Debug\Hardware_Shop_Management_System.AdminHomeForm.resources
+D:\.NET\Hardware Shop Management System\Hardware Shop Management System\obj\x86\Debug\Hardware_Shop_Management_System.Resources.resources
+D:\.NET\Hardware Shop Management System\Hardware Shop Management System\obj\x86\Debug\Hardware_Shop_Management_System.PurchaseDetailsForm.resources
+D:\.NET\Hardware Shop Management System\Hardware Shop Management System\obj\x86\Debug\Hardware_Shop_Management_System.SalesDetailsForm.resources
+D:\.NET\Hardware Shop Management System\Hardware Shop Management System\obj\x86\Debug\Hardware Shop Management System.vbproj.GenerateResource.Cache
+D:\.NET\Hardware Shop Management System\Hardware Shop Management System\obj\x86\Debug\Hardware Shop Management System.exe
+D:\.NET\Hardware Shop Management System\Hardware Shop Management System\obj\x86\Debug\Hardware Shop Management System.xml
+D:\.NET\Hardware Shop Management System\Hardware Shop Management System\obj\x86\Debug\Hardware Shop Management System.pdb
+D:\.NET\Hardware Shop Management System\Hardware Shop Management System\obj\x86\Debug\Hardware_Shop_Management_System.CustomerDetailsForm.resources
+D:\.NET\Hardware Shop Management System\Hardware Shop Management System\obj\x86\Debug\Hardware_Shop_Management_System.StockDetailsForm.resources

@@ -1,0 +1,748 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+LogisticManagementSystem
+</name>
+</assembly>
+<members>
+<member name="F:Logistic_Management_System.Customer_Details.txtCustomerID">
+	<summary>
+txtCustomerID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.Customer_Details.txtCustomerName">
+	<summary>
+txtCustomerName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.Customer_Details.txtEmail">
+	<summary>
+txtEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.Customer_Details.txtPhone">
+	<summary>
+txtPhone control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.Customer_Details.btnSave">
+	<summary>
+btnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.Customer_Details.lblMessage">
+	<summary>
+lblMessage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.Customer_Details.CustomerGridView">
+	<summary>
+CustomerGridView control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.Login.Head1">
+	<summary>
+Head1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.Login.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.Login.txtUsername">
+	<summary>
+txtUsername control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.Login.txtPassword">
+	<summary>
+txtPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.Login.btnLogin">
+	<summary>
+btnLogin control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.Login.lblMessage">
+	<summary>
+lblMessage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.Home.HomeImage">
+	<summary>
+HomeImage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.OrderManagement.txtCustomerName">
+	<summary>
+txtCustomerName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.OrderManagement.ddlStatus">
+	<summary>
+ddlStatus control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.OrderManagement.btnCreateOrder">
+	<summary>
+btnCreateOrder control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.OrderManagement.CreateStatusLabel">
+	<summary>
+CreateStatusLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.OrderManagement.OrderGridView">
+	<summary>
+OrderGridView control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.OrderManagement.RefreshButton">
+	<summary>
+RefreshButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.OrderManagement.StatusLabel">
+	<summary>
+StatusLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.WarehouseManagement.ddlWarehouse">
+	<summary>
+ddlWarehouse control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.WarehouseManagement.txtSection">
+	<summary>
+txtSection control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.WarehouseManagement.txtItemName">
+	<summary>
+txtItemName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.WarehouseManagement.txtQuantity">
+	<summary>
+txtQuantity control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.WarehouseManagement.btnCreateStorage">
+	<summary>
+btnCreateStorage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.WarehouseManagement.CreateStatusLabel">
+	<summary>
+CreateStatusLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.WarehouseManagement.StorageGridView">
+	<summary>
+StorageGridView control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.WarehouseManagement.WorkflowGridView">
+	<summary>
+WorkflowGridView control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.WarehouseManagement.ResourceGridView">
+	<summary>
+ResourceGridView control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.WarehouseManagement.RefreshButton">
+	<summary>
+RefreshButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.WarehouseManagement.StatusLabel">
+	<summary>
+StatusLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.Site.Head1">
+	<summary>
+Head1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.Site.head">
+	<summary>
+head control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.Site.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.Site.ContentPlaceHolder1">
+	<summary>
+ContentPlaceHolder1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="P:Logistic_Management_System.My.MyWebExtension.Application">
+	<summary>
+ Returns information about the current application.
+ </summary>
+</member><member name="P:Logistic_Management_System.My.MyWebExtension.Computer">
+	<summary>
+ Returns information about the host computer.
+ </summary>
+</member><member name="P:Logistic_Management_System.My.MyWebExtension.User">
+	<summary>
+ Returns information for the current Web user.
+ </summary>
+</member><member name="P:Logistic_Management_System.My.MyWebExtension.Request">
+	<summary>
+ Returns Request object.
+ </summary>
+</member><member name="P:Logistic_Management_System.My.MyWebExtension.Response">
+	<summary>
+ Returns Response object.
+ </summary>
+</member><member name="P:Logistic_Management_System.My.MyWebExtension.Log">
+	<summary>
+ Returns the Asp log object.
+ </summary>
+</member><member name="P:Logistic_Management_System.My.MyWebExtension.WebServices">
+	<summary>
+ Provides access to WebServices added to this project.
+ </summary>
+</member><member name="T:Logistic_Management_System.My.MyWebExtension">
+	<summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Logistic_Management_System.LaborManagement.ddlEmployee">
+	<summary>
+ddlEmployee control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.LaborManagement.txtTaskDescription">
+	<summary>
+txtTaskDescription control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.LaborManagement.txtScheduledDate">
+	<summary>
+txtScheduledDate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.LaborManagement.ddlStatus">
+	<summary>
+ddlStatus control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.LaborManagement.btnCreateTask">
+	<summary>
+btnCreateTask control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.LaborManagement.CreateStatusLabel">
+	<summary>
+CreateStatusLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.LaborManagement.TaskGridView">
+	<summary>
+TaskGridView control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.LaborManagement.ddlPerformanceEmployee">
+	<summary>
+ddlPerformanceEmployee control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.LaborManagement.txtTasksCompleted">
+	<summary>
+txtTasksCompleted control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.LaborManagement.txtProductivityRate">
+	<summary>
+txtProductivityRate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.LaborManagement.btnLogPerformance">
+	<summary>
+btnLogPerformance control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.LaborManagement.PerformanceStatusLabel">
+	<summary>
+PerformanceStatusLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.LaborManagement.PerformanceGridView">
+	<summary>
+PerformanceGridView control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.LaborManagement.ddlComplianceEmployee">
+	<summary>
+ddlComplianceEmployee control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.LaborManagement.txtHoursWorked">
+	<summary>
+txtHoursWorked control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.LaborManagement.btnLogCompliance">
+	<summary>
+btnLogCompliance control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.LaborManagement.ComplianceStatusLabel">
+	<summary>
+ComplianceStatusLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.LaborManagement.ComplianceGridView">
+	<summary>
+ComplianceGridView control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.LaborManagement.RefreshButton">
+	<summary>
+RefreshButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.LaborManagement.StatusLabel">
+	<summary>
+StatusLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.InventoryManagement.txtItemName">
+	<summary>
+txtItemName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.InventoryManagement.ddlLocation">
+	<summary>
+ddlLocation control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.InventoryManagement.txtStockLevel">
+	<summary>
+txtStockLevel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.InventoryManagement.txtReorderPoint">
+	<summary>
+txtReorderPoint control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.InventoryManagement.btnCreateInventory">
+	<summary>
+btnCreateInventory control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.InventoryManagement.CreateStatusLabel">
+	<summary>
+CreateStatusLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.InventoryManagement.InventoryGridView">
+	<summary>
+InventoryGridView control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.InventoryManagement.lblTurnover">
+	<summary>
+lblTurnover control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.InventoryManagement.RefreshButton">
+	<summary>
+RefreshButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.InventoryManagement.StatusLabel">
+	<summary>
+StatusLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.TransportManagement.txtOrigin">
+	<summary>
+txtOrigin control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.TransportManagement.txtDestination">
+	<summary>
+txtDestination control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.TransportManagement.txtDistance">
+	<summary>
+txtDistance control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.TransportManagement.txtEstimatedTime">
+	<summary>
+txtEstimatedTime control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.TransportManagement.btnCreateRoute">
+	<summary>
+btnCreateRoute control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.TransportManagement.RouteStatusLabel">
+	<summary>
+RouteStatusLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.TransportManagement.RouteGridView">
+	<summary>
+RouteGridView control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.TransportManagement.ddlVehicle">
+	<summary>
+ddlVehicle control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.TransportManagement.txtCurrentLocation">
+	<summary>
+txtCurrentLocation control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.TransportManagement.ddlShipmentStatus">
+	<summary>
+ddlShipmentStatus control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.TransportManagement.btnCreateShipment">
+	<summary>
+btnCreateShipment control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.TransportManagement.ShipmentStatusLabel">
+	<summary>
+ShipmentStatusLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.TransportManagement.ShipmentGridView">
+	<summary>
+ShipmentGridView control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.TransportManagement.txtVehicleID">
+	<summary>
+txtVehicleID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.TransportManagement.txtDriverName">
+	<summary>
+txtDriverName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.TransportManagement.txtSchedule">
+	<summary>
+txtSchedule control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.TransportManagement.txtFuelCost">
+	<summary>
+txtFuelCost control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.TransportManagement.btnCreateResource">
+	<summary>
+btnCreateResource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.TransportManagement.ResourceStatusLabel">
+	<summary>
+ResourceStatusLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.TransportManagement.ResourceGridView">
+	<summary>
+ResourceGridView control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.TransportManagement.RefreshButton">
+	<summary>
+RefreshButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Logistic_Management_System.TransportManagement.StatusLabel">
+	<summary>
+StatusLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+</members>
+</doc>

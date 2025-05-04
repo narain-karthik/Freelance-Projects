@@ -1,0 +1,19 @@
+D:\.NET\Employee And Visitor Gatepass\Employee And Visitor Gatepass\obj\x86\Debug\Employee_And_Visitor_Gatepass.Form1.resources
+D:\.NET\Employee And Visitor Gatepass\Employee And Visitor Gatepass\obj\x86\Debug\Employee_And_Visitor_Gatepass.Resources.resources
+D:\.NET\Employee And Visitor Gatepass\Employee And Visitor Gatepass\obj\x86\Debug\Employee And Visitor Gatepass.vbproj.GenerateResource.Cache
+D:\.NET\Employee And Visitor Gatepass\Employee And Visitor Gatepass\bin\Debug\Employee And Visitor Gatepass.exe
+D:\.NET\Employee And Visitor Gatepass\Employee And Visitor Gatepass\bin\Debug\Employee And Visitor Gatepass.pdb
+D:\.NET\Employee And Visitor Gatepass\Employee And Visitor Gatepass\bin\Debug\Employee And Visitor Gatepass.xml
+D:\.NET\Employee And Visitor Gatepass\Employee And Visitor Gatepass\obj\x86\Debug\Employee And Visitor Gatepass.exe
+D:\.NET\Employee And Visitor Gatepass\Employee And Visitor Gatepass\obj\x86\Debug\Employee And Visitor Gatepass.xml
+D:\.NET\Employee And Visitor Gatepass\Employee And Visitor Gatepass\obj\x86\Debug\Employee And Visitor Gatepass.pdb
+D:\.NET\Employee And Visitor Gatepass\Employee And Visitor Gatepass\obj\x86\Debug\Employee_And_Visitor_Gatepass.DashboardForm.resources
+D:\.NET\Employee And Visitor Gatepass\Employee And Visitor Gatepass\obj\x86\Debug\Employee_And_Visitor_Gatepass.EmployeeDetailsForm.resources
+D:\.NET\Employee And Visitor Gatepass\Employee And Visitor Gatepass\obj\x86\Debug\Employee_And_Visitor_Gatepass.VisitorDetailsForm.resources
+D:\.NET\Employee And Visitor Gatepass\Employee And Visitor Gatepass\obj\x86\Debug\Employee_And_Visitor_Gatepass.PassRequestEmployeeForm.resources
+D:\.NET\Employee And Visitor Gatepass\Employee And Visitor Gatepass\obj\x86\Debug\Employee_And_Visitor_Gatepass.PassRequestVisitorForm.resources
+D:\.NET\Employee And Visitor Gatepass\Employee And Visitor Gatepass\bin\Debug\Employee And Visitor Gatepass.exe.config
+D:\.NET\Employee And Visitor Gatepass\Employee And Visitor Gatepass\obj\x86\Debug\Employee_And_Visitor_Gatepass.ViewEmployeeDetailsForm.resources
+D:\.NET\Employee And Visitor Gatepass\Employee And Visitor Gatepass\obj\x86\Debug\Employee_And_Visitor_Gatepass.ViewPassRequestEmployeeForm.resources
+D:\.NET\Employee And Visitor Gatepass\Employee And Visitor Gatepass\obj\x86\Debug\Employee_And_Visitor_Gatepass.ViewPassRequestVisitorForm.resources
+D:\.NET\Employee And Visitor Gatepass\Employee And Visitor Gatepass\obj\x86\Debug\Employee_And_Visitor_Gatepass.ViewVisitorDetailsForm.resources

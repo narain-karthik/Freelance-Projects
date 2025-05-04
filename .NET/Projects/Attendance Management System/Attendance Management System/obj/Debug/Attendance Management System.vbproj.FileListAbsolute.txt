@@ -1,0 +1,8 @@
+D:\.NET\Attendance Management System\Attendance Management System\bin\Attendance Management System.dll
+D:\.NET\Attendance Management System\Attendance Management System\bin\Attendance Management System.pdb
+D:\.NET\Attendance Management System\Attendance Management System\bin\Attendance Management System.xml
+D:\.NET\Attendance Management System\Attendance Management System\obj\Debug\Attendance_Management_System.Resources.resources
+D:\.NET\Attendance Management System\Attendance Management System\obj\Debug\Attendance Management System.vbproj.GenerateResource.Cache
+D:\.NET\Attendance Management System\Attendance Management System\obj\Debug\Attendance Management System.dll
+D:\.NET\Attendance Management System\Attendance Management System\obj\Debug\Attendance Management System.xml
+D:\.NET\Attendance Management System\Attendance Management System\obj\Debug\Attendance Management System.pdb

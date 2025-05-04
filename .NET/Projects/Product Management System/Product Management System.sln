@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Product Management System", "Product Management System\Product Management System.vbproj", "{E56F6467-268C-4DA8-8C89-F5BB4BB55369}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E56F6467-268C-4DA8-8C89-F5BB4BB55369}.Debug|x86.ActiveCfg = Debug|x86
+		{E56F6467-268C-4DA8-8C89-F5BB4BB55369}.Debug|x86.Build.0 = Debug|x86
+		{E56F6467-268C-4DA8-8C89-F5BB4BB55369}.Release|x86.ActiveCfg = Release|x86
+		{E56F6467-268C-4DA8-8C89-F5BB4BB55369}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,22 @@
+27-01-2025 16:03:40 - Cannot insert the value NULL into column 'EnquiryId', table 'Driving.dbo.Enquiry'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+27-01-2025 16:03:42 - Cannot insert the value NULL into column 'EnquiryId', table 'Driving.dbo.Enquiry'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+27-01-2025 16:03:43 - Cannot insert the value NULL into column 'EnquiryId', table 'Driving.dbo.Enquiry'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+27-01-2025 16:03:44 - Cannot insert the value NULL into column 'EnquiryId', table 'Driving.dbo.Enquiry'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+27-01-2025 16:03:44 - Cannot insert the value NULL into column 'EnquiryId', table 'Driving.dbo.Enquiry'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+27-01-2025 16:03:45 - Cannot insert the value NULL into column 'EnquiryId', table 'Driving.dbo.Enquiry'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+27-01-2025 16:03:45 - Cannot insert the value NULL into column 'EnquiryId', table 'Driving.dbo.Enquiry'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+27-01-2025 16:03:45 - Cannot insert the value NULL into column 'EnquiryId', table 'Driving.dbo.Enquiry'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+27-01-2025 16:03:46 - Cannot insert the value NULL into column 'EnquiryId', table 'Driving.dbo.Enquiry'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+27-01-2025 16:03:46 - Cannot insert the value NULL into column 'EnquiryId', table 'Driving.dbo.Enquiry'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+27-01-2025 16:03:46 - Cannot insert the value NULL into column 'EnquiryId', table 'Driving.dbo.Enquiry'; column does not allow nulls. INSERT fails.
+The statement has been terminated.

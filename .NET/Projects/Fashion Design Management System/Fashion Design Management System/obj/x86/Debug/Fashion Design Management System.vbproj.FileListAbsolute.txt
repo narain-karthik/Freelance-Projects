@@ -1,0 +1,16 @@
+D:\.NET\Fashion Design Management System\Fashion Design Management System\bin\Debug\Fashion Design Management System.exe
+D:\.NET\Fashion Design Management System\Fashion Design Management System\bin\Debug\Fashion Design Management System.pdb
+D:\.NET\Fashion Design Management System\Fashion Design Management System\bin\Debug\Fashion Design Management System.xml
+D:\.NET\Fashion Design Management System\Fashion Design Management System\obj\x86\Debug\Fashion_Design_Management_System.CustomerDetails.resources
+D:\.NET\Fashion Design Management System\Fashion Design Management System\obj\x86\Debug\Fashion_Design_Management_System.DashboardForm.resources
+D:\.NET\Fashion Design Management System\Fashion Design Management System\obj\x86\Debug\Fashion_Design_Management_System.Form1.resources
+D:\.NET\Fashion Design Management System\Fashion Design Management System\obj\x86\Debug\Fashion_Design_Management_System.Resources.resources
+D:\.NET\Fashion Design Management System\Fashion Design Management System\obj\x86\Debug\Fashion_Design_Management_System.ProductDetails.resources
+D:\.NET\Fashion Design Management System\Fashion Design Management System\obj\x86\Debug\Fashion_Design_Management_System.PurchaseDetails.resources
+D:\.NET\Fashion Design Management System\Fashion Design Management System\obj\x86\Debug\Fashion_Design_Management_System.SalesDetails.resources
+D:\.NET\Fashion Design Management System\Fashion Design Management System\obj\x86\Debug\Fashion_Design_Management_System.StockDetails.resources
+D:\.NET\Fashion Design Management System\Fashion Design Management System\obj\x86\Debug\Fashion Design Management System.vbproj.GenerateResource.Cache
+D:\.NET\Fashion Design Management System\Fashion Design Management System\obj\x86\Debug\Fashion Design Management System.exe
+D:\.NET\Fashion Design Management System\Fashion Design Management System\obj\x86\Debug\Fashion Design Management System.xml
+D:\.NET\Fashion Design Management System\Fashion Design Management System\obj\x86\Debug\Fashion Design Management System.pdb
+D:\.NET\Fashion Design Management System\Fashion Design Management System\bin\Debug\Fashion Design Management System.exe.config

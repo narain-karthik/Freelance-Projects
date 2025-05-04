@@ -1,0 +1,181 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class ViewCustomerCreditDetails
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.CreditDataSet2 = New Credit_Sale_Management_System.CreditDataSet2()
+        Me.CustomerCreditBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.CustomerCreditTableAdapter = New Credit_Sale_Management_System.CreditDataSet2TableAdapters.CustomerCreditTableAdapter()
+        Me.CreditIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CustomerIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TotalCreditLimitDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CreditUsedDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.RemainingCreditDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DueAmountDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DueDateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.InterestRateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PaymentStatusDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.LastPaymentDateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NextPaymentDueDateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CreditDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CustomerCreditBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(442, 64)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(259, 20)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "View Customer Credit Details"
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.AutoGenerateColumns = False
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.CreditIDDataGridViewTextBoxColumn, Me.CustomerIDDataGridViewTextBoxColumn, Me.TotalCreditLimitDataGridViewTextBoxColumn, Me.CreditUsedDataGridViewTextBoxColumn, Me.RemainingCreditDataGridViewTextBoxColumn, Me.DueAmountDataGridViewTextBoxColumn, Me.DueDateDataGridViewTextBoxColumn, Me.InterestRateDataGridViewTextBoxColumn, Me.PaymentStatusDataGridViewTextBoxColumn, Me.LastPaymentDateDataGridViewTextBoxColumn, Me.NextPaymentDueDateDataGridViewTextBoxColumn})
+        Me.DataGridView1.DataSource = Me.CustomerCreditBindingSource
+        Me.DataGridView1.Location = New System.Drawing.Point(1, 136)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowTemplate.Height = 24
+        Me.DataGridView1.Size = New System.Drawing.Size(1158, 150)
+        Me.DataGridView1.TabIndex = 1
+        '
+        'CreditDataSet2
+        '
+        Me.CreditDataSet2.DataSetName = "CreditDataSet2"
+        Me.CreditDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'CustomerCreditBindingSource
+        '
+        Me.CustomerCreditBindingSource.DataMember = "CustomerCredit"
+        Me.CustomerCreditBindingSource.DataSource = Me.CreditDataSet2
+        '
+        'CustomerCreditTableAdapter
+        '
+        Me.CustomerCreditTableAdapter.ClearBeforeFill = True
+        '
+        'CreditIDDataGridViewTextBoxColumn
+        '
+        Me.CreditIDDataGridViewTextBoxColumn.DataPropertyName = "CreditID"
+        Me.CreditIDDataGridViewTextBoxColumn.HeaderText = "CreditID"
+        Me.CreditIDDataGridViewTextBoxColumn.Name = "CreditIDDataGridViewTextBoxColumn"
+        '
+        'CustomerIDDataGridViewTextBoxColumn
+        '
+        Me.CustomerIDDataGridViewTextBoxColumn.DataPropertyName = "CustomerID"
+        Me.CustomerIDDataGridViewTextBoxColumn.HeaderText = "CustomerID"
+        Me.CustomerIDDataGridViewTextBoxColumn.Name = "CustomerIDDataGridViewTextBoxColumn"
+        '
+        'TotalCreditLimitDataGridViewTextBoxColumn
+        '
+        Me.TotalCreditLimitDataGridViewTextBoxColumn.DataPropertyName = "TotalCreditLimit"
+        Me.TotalCreditLimitDataGridViewTextBoxColumn.HeaderText = "TotalCreditLimit"
+        Me.TotalCreditLimitDataGridViewTextBoxColumn.Name = "TotalCreditLimitDataGridViewTextBoxColumn"
+        '
+        'CreditUsedDataGridViewTextBoxColumn
+        '
+        Me.CreditUsedDataGridViewTextBoxColumn.DataPropertyName = "CreditUsed"
+        Me.CreditUsedDataGridViewTextBoxColumn.HeaderText = "CreditUsed"
+        Me.CreditUsedDataGridViewTextBoxColumn.Name = "CreditUsedDataGridViewTextBoxColumn"
+        '
+        'RemainingCreditDataGridViewTextBoxColumn
+        '
+        Me.RemainingCreditDataGridViewTextBoxColumn.DataPropertyName = "RemainingCredit"
+        Me.RemainingCreditDataGridViewTextBoxColumn.HeaderText = "RemainingCredit"
+        Me.RemainingCreditDataGridViewTextBoxColumn.Name = "RemainingCreditDataGridViewTextBoxColumn"
+        '
+        'DueAmountDataGridViewTextBoxColumn
+        '
+        Me.DueAmountDataGridViewTextBoxColumn.DataPropertyName = "DueAmount"
+        Me.DueAmountDataGridViewTextBoxColumn.HeaderText = "DueAmount"
+        Me.DueAmountDataGridViewTextBoxColumn.Name = "DueAmountDataGridViewTextBoxColumn"
+        '
+        'DueDateDataGridViewTextBoxColumn
+        '
+        Me.DueDateDataGridViewTextBoxColumn.DataPropertyName = "DueDate"
+        Me.DueDateDataGridViewTextBoxColumn.HeaderText = "DueDate"
+        Me.DueDateDataGridViewTextBoxColumn.Name = "DueDateDataGridViewTextBoxColumn"
+        '
+        'InterestRateDataGridViewTextBoxColumn
+        '
+        Me.InterestRateDataGridViewTextBoxColumn.DataPropertyName = "InterestRate"
+        Me.InterestRateDataGridViewTextBoxColumn.HeaderText = "InterestRate"
+        Me.InterestRateDataGridViewTextBoxColumn.Name = "InterestRateDataGridViewTextBoxColumn"
+        '
+        'PaymentStatusDataGridViewTextBoxColumn
+        '
+        Me.PaymentStatusDataGridViewTextBoxColumn.DataPropertyName = "PaymentStatus"
+        Me.PaymentStatusDataGridViewTextBoxColumn.HeaderText = "PaymentStatus"
+        Me.PaymentStatusDataGridViewTextBoxColumn.Name = "PaymentStatusDataGridViewTextBoxColumn"
+        '
+        'LastPaymentDateDataGridViewTextBoxColumn
+        '
+        Me.LastPaymentDateDataGridViewTextBoxColumn.DataPropertyName = "LastPaymentDate"
+        Me.LastPaymentDateDataGridViewTextBoxColumn.HeaderText = "LastPaymentDate"
+        Me.LastPaymentDateDataGridViewTextBoxColumn.Name = "LastPaymentDateDataGridViewTextBoxColumn"
+        '
+        'NextPaymentDueDateDataGridViewTextBoxColumn
+        '
+        Me.NextPaymentDueDateDataGridViewTextBoxColumn.DataPropertyName = "NextPaymentDueDate"
+        Me.NextPaymentDueDateDataGridViewTextBoxColumn.HeaderText = "NextPaymentDueDate"
+        Me.NextPaymentDueDateDataGridViewTextBoxColumn.Name = "NextPaymentDueDateDataGridViewTextBoxColumn"
+        '
+        'ViewCustomerCreditDetails
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(1162, 415)
+        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.Label1)
+        Me.Name = "ViewCustomerCreditDetails"
+        Me.Text = "ViewCustomerCreditDetails"
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CreditDataSet2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CustomerCreditBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
+    End Sub
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents CreditDataSet2 As Credit_Sale_Management_System.CreditDataSet2
+    Friend WithEvents CustomerCreditBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents CustomerCreditTableAdapter As Credit_Sale_Management_System.CreditDataSet2TableAdapters.CustomerCreditTableAdapter
+    Friend WithEvents CreditIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents CustomerIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents TotalCreditLimitDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents CreditUsedDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents RemainingCreditDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DueAmountDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DueDateDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents InterestRateDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents PaymentStatusDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents LastPaymentDateDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents NextPaymentDueDateDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+End Class

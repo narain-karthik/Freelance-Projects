@@ -1,0 +1,71 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site.master.vb" Inherits="Logistic_Management_System.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Logistic Management System</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            background-color: #2c3e50;
+            overflow: hidden;
+            padding: 10px 0;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .navbar a:hover {
+            background-color: #34495e;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #ecf0f1;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="navbar">
+            <a href="Home.aspx">Home</a>
+            <a href="OrderManagement.aspx">Order Management</a>
+            <a href="Inventory Management.aspx">Inventory Management</a>
+            <a href="Warehouse Management.aspx">Warehouse Management</a>
+            <a href="Labor Management.aspx">Labor Management</a>
+            <a href="Transport Management.aspx">Transport Management</a>
+            <a href="Customer Details.aspx">Customer Details</a>
+        </div>
+        <div class="container">
+            <div class="header">
+                <h1>Logistic Management System</h1>
+                <p>Streamline your logistics operations with ease.</p>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <!-- Default content or child page content goes here -->
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

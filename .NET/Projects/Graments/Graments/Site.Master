@@ -1,0 +1,80 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site.master.vb" Inherits="Graments.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title><asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder></title>
+    <style>
+         body {
+            font-family: sans-serif; /* Choose a suitable font */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #8B0000; /* Maroon background */
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between; /* Align items on opposite ends */
+            align-items: center; /* Vertically center items */
+        }
+
+        .logo {
+            display: flex;
+            align-items: center; /* Vertically center logo and text */
+        }
+
+        .logo img {
+            max-height: 50px; /* Adjust as needed */
+            margin-right: 10px; /* Space between logo and text */
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-left: 20px; /* Space between navigation items */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Add more styles for other sections as needed */
+        /* For example, styles for the "garmenting" section, etc. */
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header>
+                <div class="logo">
+                    <img src="logo.png" alt="AATHAVA GARMENTS Logo" /> <h2>&nbsp;GARMENTS</h2>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="Home.aspx">Home</a></li>
+                        <li><a href="About.aspx">About Us</a></li>
+                        <li><a href="Product.aspx">Products</a></li>
+                        <li><a href="Service.aspx">Garmenting</a></li>
+                        <li><a href="Contact.aspx">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <footer>
+                </footer>
+        </div>
+    </form>
+</body>
+</html>

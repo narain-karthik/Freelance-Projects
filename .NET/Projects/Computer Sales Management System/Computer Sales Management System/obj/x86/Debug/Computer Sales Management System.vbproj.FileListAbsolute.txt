@@ -1,0 +1,20 @@
+D:\.NET\Computer Sales Management System\Computer Sales Management System\bin\Debug\Computer Sales Management System.exe
+D:\.NET\Computer Sales Management System\Computer Sales Management System\bin\Debug\Computer Sales Management System.pdb
+D:\.NET\Computer Sales Management System\Computer Sales Management System\bin\Debug\Computer Sales Management System.xml
+D:\.NET\Computer Sales Management System\Computer Sales Management System\obj\x86\Debug\Computer_Sales_Management_System.Form1.resources
+D:\.NET\Computer Sales Management System\Computer Sales Management System\obj\x86\Debug\Computer_Sales_Management_System.Resources.resources
+D:\.NET\Computer Sales Management System\Computer Sales Management System\obj\x86\Debug\Computer Sales Management System.vbproj.GenerateResource.Cache
+D:\.NET\Computer Sales Management System\Computer Sales Management System\obj\x86\Debug\Computer Sales Management System.exe
+D:\.NET\Computer Sales Management System\Computer Sales Management System\obj\x86\Debug\Computer Sales Management System.xml
+D:\.NET\Computer Sales Management System\Computer Sales Management System\obj\x86\Debug\Computer Sales Management System.pdb
+D:\.NET\Computer Sales Management System\Computer Sales Management System\obj\x86\Debug\Computer_Sales_Management_System.Login.resources
+D:\.NET\Computer Sales Management System\Computer Sales Management System\obj\x86\Debug\Computer_Sales_Management_System.Create.resources
+D:\.NET\Computer Sales Management System\Computer Sales Management System\obj\x86\Debug\Computer_Sales_Management_System.AdminHome.resources
+D:\.NET\Computer Sales Management System\Computer Sales Management System\obj\x86\Debug\Computer_Sales_Management_System.Staff.resources
+D:\.NET\Computer Sales Management System\Computer Sales Management System\obj\x86\Debug\Computer_Sales_Management_System.StaffHome.resources
+D:\.NET\Computer Sales Management System\Computer Sales Management System\bin\Debug\Computer Sales Management System.exe.config
+D:\.NET\Computer Sales Management System\Computer Sales Management System\obj\x86\Debug\Computer_Sales_Management_System.AddCustomer.resources
+D:\.NET\Computer Sales Management System\Computer Sales Management System\obj\x86\Debug\Computer_Sales_Management_System.AddProduct.resources
+D:\.NET\Computer Sales Management System\Computer Sales Management System\obj\x86\Debug\Computer_Sales_Management_System.ViewCus.resources
+D:\.NET\Computer Sales Management System\Computer Sales Management System\obj\x86\Debug\Computer_Sales_Management_System.ViewPro.resources
+D:\.NET\Computer Sales Management System\Computer Sales Management System\obj\x86\Debug\Computer_Sales_Management_System.ViewStaff.resources

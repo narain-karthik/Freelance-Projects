@@ -1,0 +1,8 @@
+D:\.NET\Courier Management System\Courier Management System\bin\Courier Management System.dll
+D:\.NET\Courier Management System\Courier Management System\bin\Courier Management System.pdb
+D:\.NET\Courier Management System\Courier Management System\bin\Courier Management System.xml
+D:\.NET\Courier Management System\Courier Management System\obj\Debug\Courier_Management_System.Resources.resources
+D:\.NET\Courier Management System\Courier Management System\obj\Debug\Courier Management System.vbproj.GenerateResource.Cache
+D:\.NET\Courier Management System\Courier Management System\obj\Debug\Courier Management System.dll
+D:\.NET\Courier Management System\Courier Management System\obj\Debug\Courier Management System.xml
+D:\.NET\Courier Management System\Courier Management System\obj\Debug\Courier Management System.pdb

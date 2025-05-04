@@ -1,0 +1,26 @@
+D:\.NET\Wood Craft\Wood Craft\obj\x86\Debug\Wood_Craft.Form1.resources
+D:\.NET\Wood Craft\Wood Craft\obj\x86\Debug\Wood_Craft.Home.resources
+D:\.NET\Wood Craft\Wood Craft\obj\x86\Debug\Wood_Craft.Resources.resources
+D:\.NET\Wood Craft\Wood Craft\obj\x86\Debug\Wood Craft.vbproj.GenerateResource.Cache
+D:\.NET\Wood Craft\Wood Craft\bin\Debug\Wood Craft.exe
+D:\.NET\Wood Craft\Wood Craft\bin\Debug\Wood Craft.pdb
+D:\.NET\Wood Craft\Wood Craft\bin\Debug\Wood Craft.xml
+D:\.NET\Wood Craft\Wood Craft\obj\x86\Debug\Wood Craft.exe
+D:\.NET\Wood Craft\Wood Craft\obj\x86\Debug\Wood Craft.xml
+D:\.NET\Wood Craft\Wood Craft\obj\x86\Debug\Wood Craft.pdb
+D:\.NET\Wood Craft\Wood Craft\bin\Debug\Wood Craft.exe.config
+D:\.NET\Wood Craft\Wood Craft\obj\x86\Debug\Wood Craft.vbprojResolveAssemblyReference.cache
+D:\.NET\Wood Craft\Wood Craft\obj\x86\Debug\Wood_Craft.Customer.resources
+D:\.NET\Wood Craft\Wood Craft\obj\x86\Debug\Wood_Craft.Item.resources
+D:\.NET\Wood Craft\Wood Craft\obj\x86\Debug\Wood_Craft.Purchase.resources
+D:\.NET\Wood Craft\Wood Craft\obj\x86\Debug\Wood_Craft.Sales.resources
+D:\.NET\Wood Craft\Wood Craft\obj\x86\Debug\Wood_Craft.StockDetails.resources
+D:\.NET\Wood Craft\Wood Craft\obj\x86\Debug\Wood_Craft.Supplier.resources
+D:\.NET\Wood Craft\Wood Craft\obj\x86\Debug\Wood_Craft.CustomerReport.resources
+D:\.NET\Wood Craft\Wood Craft\obj\x86\Debug\RdlCompile.cache
+D:\.NET\Wood Craft\Wood Craft\obj\x86\Debug\RdlCompile.compiled
+D:\.NET\Wood Craft\Wood Craft\obj\x86\Debug\Wood_Craft.SupplierReport.resources
+D:\.NET\Wood Craft\Wood Craft\obj\x86\Debug\Wood_Craft.ItemReport.resources
+D:\.NET\Wood Craft\Wood Craft\obj\x86\Debug\Wood_Craft.PurchaseReport.resources
+D:\.NET\Wood Craft\Wood Craft\obj\x86\Debug\Wood_Craft.SalesReport.resources
+D:\.NET\Wood Craft\Wood Craft\obj\x86\Debug\Wood_Craft.StockReport.resources
