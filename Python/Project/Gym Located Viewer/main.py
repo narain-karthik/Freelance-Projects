@@ -9,8 +9,8 @@ app.secret_key = 'your_secret_key_here'  # Change this to a secure key
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USERNAME'] = 'narainjkans@gmail.com'
-app.config['MAIL_PASSWORD'] = 'hefh vudq kkly wfsd'
+app.config['MAIL_USERNAME'] = 'Your_email@gmail.com'
+app.config['MAIL_PASSWORD'] = 'SMTP KEY'
 app.config['MAIL_DEFAULT_SENDER'] = 'your_email@gmail.com'
 mail = Mail(app)
 
